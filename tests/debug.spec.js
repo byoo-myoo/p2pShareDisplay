@@ -5,7 +5,7 @@ test('debug ui check', async ({ page }) => {
     await page.goto('http://localhost:5173');
 
     // Click Create Room
-    await page.click('text=Create Room');
+    await page.click('button:has-text("Create Room")');
 
     // Wait for navigation
     await page.waitForURL(/\/room\//);

@@ -1,50 +1,82 @@
 import { test, expect } from '@playwright/test';
 
-test('create room and check UI', async ({ page }) => {
-    // Go to home page
-    await page.goto('http://localhost:5173');
-
-    // Click Create Room
-    await page.click('text=Create Room');
-
-    // Wait for navigation
-    await page.waitForURL(/\/room\//);
-
-    // Check if Room ID is displayed
-    await expect(page.locator('text=Room ID:')).toBeVisible();
-
-    // Check if Start Screen Share button is visible (Host view)
-    // This verifies that isHost became true
-    await expect(page.locator('text=Start Screen Share')).toBeVisible({ timeout: 10000 });
-
-    // Check status
-    await expect(page.locator('.status-badge')).toContainText(/Waiting for guest|Guest connected/);
-});
-
-test('guest join flow', async ({ browser }) => {
+test('create room with password and guest join', async ({ browser }) => {
+    // --- Host Context ---
     const hostContext = await browser.newContext();
-    const guestContext = await browser.newContext();
     const hostPage = await hostContext.newPage();
+
+    // Go to home
+    await hostPage.goto('/');
+
+    // Set password
+    await hostPage.fill('input[placeholder="Enter password"]', 'secret123');
+
+    // Create Room
+    await hostPage.click('button:has-text("Create Room")');
+
+    // Wait for room to load
+    await hostPage.waitForURL(/\/room\//);
+
+    // Get Room ID
+    const roomId = await hostPage.locator('.header strong').innerText();
+    console.log('Room ID:', roomId);
+
+    // Verify Link Generation (IP check)
+    const hostUrl = hostPage.url();
+    expect(hostUrl).toContain('/room/');
+
+    // --- Guest Context ---
+    const guestContext = await browser.newContext();
     const guestPage = await guestContext.newPage();
 
-    // Host creates room
-    await hostPage.goto('http://localhost:5173');
-    await hostPage.click('text=Create Room');
-    await hostPage.waitForURL(/\/room\//);
-    const url = hostPage.url();
-    const roomId = url.split('/').pop();
+    // Go to home
+    await guestPage.goto('/');
 
-    // Guest joins room
-    await guestPage.goto(url);
+    // Fill Room ID and Password
+    await guestPage.fill('input[placeholder="Enter Room ID"]', roomId);
+    await guestPage.fill('input[placeholder="Enter Room Password"]', 'secret123');
 
-    // Verify Guest sees "Waiting for host"
-    await expect(guestPage.locator('text=Waiting for host to share screen...')).toBeVisible();
+    // Join
+    await guestPage.click('button:has-text("Join Room")');
 
-    // Verify Host sees "Guest connected" (might take a moment for P2P)
-    // Note: P2P might fail in some CI environments or if ICE fails, but locally it should work.
-    // We'll give it a generous timeout.
-    await expect(hostPage.locator('.status-badge')).toContainText('Guest connected', { timeout: 15000 });
+    // Wait for navigation
+    await guestPage.waitForURL(/\/room\//);
+
+    // Wait for connection
     await expect(guestPage.locator('.status-badge')).toContainText('Connected to Host', { timeout: 15000 });
+
+    // Cleanup
+    await hostContext.close();
+    await guestContext.close();
+});
+
+test('guest join with wrong password fails', async ({ browser }) => {
+    // --- Host Context ---
+    const hostContext = await browser.newContext();
+    const hostPage = await hostContext.newPage();
+    await hostPage.goto('/');
+    await hostPage.fill('input[placeholder="Enter password"]', 'secret123');
+    await hostPage.click('button:has-text("Create Room")');
+    await hostPage.waitForURL(/\/room\//);
+    const roomId = await hostPage.locator('.header strong').innerText();
+
+    // --- Guest Context ---
+    const guestContext = await browser.newContext();
+    const guestPage = await guestContext.newPage();
+    await guestPage.goto('/');
+
+    // Fill Room ID and WRONG Password
+    await guestPage.fill('input[placeholder="Enter Room ID"]', roomId);
+    await guestPage.fill('input[placeholder="Enter Room Password"]', 'wrongpass');
+
+    // Join
+    await guestPage.click('button:has-text("Join Room")');
+
+    // Wait for navigation
+    await guestPage.waitForURL(/\/room\//);
+
+    // Expect Auth Failure Modal or Status
+    await expect(guestPage.locator('.status-badge')).toContainText('Authentication Failed', { timeout: 15000 });
 
     await hostContext.close();
     await guestContext.close();

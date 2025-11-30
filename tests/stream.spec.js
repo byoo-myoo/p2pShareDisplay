@@ -20,7 +20,7 @@ test('screen share stream flow', async ({ browser }) => {
 
     // Host creates room
     await hostPage.goto('http://localhost:5173');
-    await hostPage.click('text=Create Room');
+    await hostPage.click('button:has-text("Create Room")');
     await hostPage.waitForURL(/\/room\//);
     const url = hostPage.url();
 

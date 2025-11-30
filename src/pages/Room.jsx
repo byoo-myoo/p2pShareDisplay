@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import Peer from 'peerjs';
 import { Share, Copy, Check, Play, Terminal } from 'lucide-react';
 
@@ -7,6 +7,7 @@ const peerCache = new Map();
 
 function Room() {
     const { roomId } = useParams();
+    const location = useLocation();
     const [isHost, setIsHost] = useState(null);
     const [status, setStatus] = useState('Initializing...');
     const [stream, setStream] = useState(null);
@@ -14,6 +15,12 @@ function Room() {
     const [copied, setCopied] = useState(false);
     const [logs, setLogs] = useState([]);
     const [showLogs, setShowLogs] = useState(false);
+
+    // Auth state
+    const [password, setPassword] = useState(location.state?.password || '');
+    const [isAuthenticated, setIsAuthenticated] = useState(false); // For Guest: true if auth success
+    const [showAuthModal, setShowAuthModal] = useState(false); // For Guest: if password needed
+    const [authInput, setAuthInput] = useState('');
 
     const videoRef = useRef(null);
     const connRef = useRef(null);
@@ -23,8 +30,8 @@ function Room() {
     const addLog = (msg, type = 'info') => {
         const timestamp = new Date().toLocaleTimeString();
         const logEntry = `[${timestamp}] ${msg}`;
-        console.log(logEntry); // Keep console log
-        setLogs(prev => [...prev.slice(-19), { msg: logEntry, type }]); // Keep last 20 logs
+        console.log(logEntry);
+        setLogs(prev => [...prev.slice(-19), { msg: logEntry, type }]);
     };
 
     // Effect to handle video stream assignment
@@ -49,21 +56,21 @@ function Room() {
             }
         } else {
             addLog(`Initializing new Peer with ID: ${roomId}`);
-            // Try to be Host first
             peer = new Peer(roomId, { debug: 2 });
             peerCache.set(roomId, peer);
         }
 
         peerRef.current = peer;
 
-        // Define handlers
         const handleOpen = (id) => {
             addLog(`Peer Opened: ${id}`);
             if (id === roomId) {
                 setIsHost(true);
                 setStatus('Waiting for guest...');
+                if (password) {
+                    addLog('Room is password protected');
+                }
             } else {
-                // If ID is not roomId, we are guest (this path might not be hit if we force roomId, but for safety)
                 setIsHost(false);
             }
         };
@@ -71,11 +78,39 @@ function Room() {
         const handleConnection = (conn) => {
             addLog(`Received connection from: ${conn.peer}`);
             connRef.current = conn;
-            setStatus('Guest connected');
-            setupDataConnection(conn);
-            if (streamRef.current) {
-                addLog('Stream already active, calling guest...');
-                callGuest(peer, conn.peer, streamRef.current);
+
+            // If we have a password, we wait for auth
+            if (password) {
+                setStatus('Guest connecting (verifying password)...');
+                conn.on('data', (data) => {
+                    if (data.type === 'auth') {
+                        if (data.password === password) {
+                            addLog('Password verified. Access granted.');
+                            conn.send({ type: 'auth-success' });
+                            setStatus('Guest connected');
+                            setupDataConnection(conn);
+                            if (streamRef.current) {
+                                callGuest(peer, conn.peer, streamRef.current);
+                            }
+                        } else {
+                            addLog('Invalid password attempt.', 'error');
+                            conn.send({ type: 'auth-fail' });
+                            setTimeout(() => conn.close(), 500);
+                        }
+                    } else if (data.type === 'cursor') {
+                        // Allow cursor if already authenticated (handled in setupDataConnection)
+                    }
+                });
+            } else {
+                // No password, allow immediately
+                conn.on('open', () => {
+                    setStatus('Guest connected');
+                    setupDataConnection(conn);
+                    conn.send({ type: 'auth-success' });
+                    if (streamRef.current) {
+                        callGuest(peer, conn.peer, streamRef.current);
+                    }
+                });
             }
         };
 
@@ -83,12 +118,6 @@ function Room() {
             addLog(`Peer error: ${err.type}`, 'error');
             if (err.type === 'unavailable-id') {
                 addLog('ID taken. Checking if we should be Guest...');
-                // If we tried to be host (roomId) and failed, it means someone else is host.
-                // BUT, if we are reusing a cached peer, we shouldn't get this error for the same peer.
-                // This error comes from a NEW peer.
-
-                // If we are here, it means we failed to claim roomId.
-                // We should destroy this failed peer and try to join as guest.
                 peer.destroy();
                 peerCache.delete(roomId);
                 initializeGuest();
@@ -97,7 +126,6 @@ function Room() {
             }
         };
 
-        // Attach listeners
         peer.off('open');
         peer.off('connection');
         peer.off('error');
@@ -107,7 +135,6 @@ function Room() {
         peer.on('connection', handleConnection);
         peer.on('error', handleError);
 
-        // If peer is already open (from cache), trigger handler manually
         if (peer.open) {
             handleOpen(peer.id);
         }
@@ -117,18 +144,16 @@ function Room() {
             if (streamRef.current) {
                 streamRef.current.getTracks().forEach(track => track.stop());
             }
-
-            // Schedule cleanup
             if (peerRef.current) {
                 const p = peerRef.current;
                 p._cleanupTimer = setTimeout(() => {
                     addLog('Destroying peer after timeout');
                     p.destroy();
                     peerCache.delete(roomId);
-                }, 1000); // 1 second grace period for Strict Mode
+                }, 1000);
             }
         };
-    }, [roomId]);
+    }, [roomId, password]); // Re-run if password changes (shouldn't happen but good practice)
 
     const initializeGuest = () => {
         const guest = new Peer();
@@ -143,9 +168,42 @@ function Room() {
             connRef.current = conn;
 
             conn.on('open', () => {
-                addLog('Connected to Host');
-                setStatus('Connected to Host');
-                setupDataConnection(conn);
+                addLog('Connected to Host. Sending handshake...');
+
+                // Send password if we have it
+                if (password) {
+                    conn.send({ type: 'auth', password: password });
+                } else {
+                    conn.send({ type: 'auth', password: '' });
+                }
+            });
+
+            conn.on('data', (data) => {
+                if (data.type === 'auth-success') {
+                    addLog('Authentication successful');
+                    setIsAuthenticated(true);
+                    setStatus('Connected to Host');
+                    setupDataConnection(conn);
+                    setShowAuthModal(false);
+                } else if (data.type === 'auth-fail') {
+                    addLog('Authentication failed', 'error');
+                    setStatus('Authentication Failed');
+                    setIsAuthenticated(false);
+                    setShowAuthModal(true); // Show modal to retry
+                    conn.close();
+                } else if (data.type === 'cursor') {
+                    setRemoteCursor({ x: data.x, y: data.y, visible: true });
+                }
+            });
+
+            conn.on('close', () => {
+                if (!isAuthenticated) {
+                    // If closed before auth, maybe wrong password
+                } else {
+                    setStatus('Connection closed');
+                }
+                setRemoteCursor(prev => ({ ...prev, visible: false }));
+                connRef.current = null;
             });
 
             conn.on('error', (err) => {
@@ -159,7 +217,6 @@ function Room() {
             call.answer();
             call.on('stream', (remoteStream) => {
                 addLog(`Guest received stream: ${remoteStream.id}`);
-                addLog(`Tracks: ${remoteStream.getTracks().length}`);
                 setStream(remoteStream);
             });
             call.on('error', (err) => addLog(`Call error: ${err}`, 'error'));
@@ -171,18 +228,20 @@ function Room() {
         });
     };
 
-    const setupDataConnection = (conn) => {
-        conn.on('data', (data) => {
-            if (data.type === 'cursor') {
-                setRemoteCursor({ x: data.x, y: data.y, visible: true });
-            }
-        });
+    const handleAuthSubmit = () => {
+        setPassword(authInput);
+        setShowAuthModal(false);
+        // Re-initialize guest with new password
+        if (peerRef.current) {
+            peerRef.current.destroy();
+        }
+        setTimeout(initializeGuest, 500);
+    };
 
-        conn.on('close', () => {
-            setStatus('Connection closed');
-            setRemoteCursor(prev => ({ ...prev, visible: false }));
-            connRef.current = null;
-        });
+    const setupDataConnection = (conn) => {
+        // Only handle cursor if authenticated (or no password needed)
+        // Logic moved to 'data' handler in initializeGuest for Guest
+        // For Host, it's in handleConnection
     };
 
     const callGuest = (peer, guestId, stream) => {
@@ -244,7 +303,12 @@ function Room() {
     };
 
     const copyUrl = () => {
-        const url = `${window.location.origin}${window.location.pathname}#/room/${roomId}`;
+        let hostname = window.location.hostname;
+        if ((hostname === 'localhost' || hostname === '127.0.0.1') && typeof __LOCAL_IP__ !== 'undefined') {
+            hostname = __LOCAL_IP__;
+        }
+        const port = window.location.port ? `:${window.location.port}` : '';
+        const url = `${window.location.protocol}//${hostname}${port}${window.location.pathname}#/room/${roomId}`;
         navigator.clipboard.writeText(url);
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
@@ -279,6 +343,27 @@ function Room() {
                     {status}
                 </div>
             </div>
+
+            {showAuthModal && (
+                <div className="modal-overlay" style={{
+                    position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
+                    backgroundColor: 'rgba(0,0,0,0.7)', zIndex: 2000,
+                    display: 'flex', justifyContent: 'center', alignItems: 'center'
+                }}>
+                    <div className="card" style={{ minWidth: '300px' }}>
+                        <h3>Password Required</h3>
+                        <p>This room is protected.</p>
+                        <input
+                            type="password"
+                            value={authInput}
+                            onChange={e => setAuthInput(e.target.value)}
+                            placeholder="Enter Password"
+                            style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem' }}
+                        />
+                        <button onClick={handleAuthSubmit} style={{ width: '100%' }}>Join</button>
+                    </div>
+                </div>
+            )}
 
             {isHost === true && (
                 <div className="controls">

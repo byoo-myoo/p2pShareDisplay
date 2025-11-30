@@ -1,51 +1,71 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Monitor, Users } from 'lucide-react';
+import { Monitor, Users, Lock } from 'lucide-react';
 
 function Home() {
     const navigate = useNavigate();
-    const [joinId, setJoinId] = useState('');
+    const [joinRoomId, setJoinRoomId] = useState('');
+    const [createPassword, setCreatePassword] = useState('');
+    const [joinPassword, setJoinPassword] = useState('');
 
-    const startSharing = () => {
-        // Generate a random 6-character ID
+    const handleCreateRoom = () => {
         const roomId = Math.random().toString(36).substring(2, 8);
-        navigate(`/room/${roomId}`);
+        navigate(`/room/${roomId}`, { state: { password: createPassword } });
     };
 
-    const joinRoom = (e) => {
+    const handleJoinRoom = (e) => {
         e.preventDefault();
-        if (joinId.trim()) {
-            navigate(`/room/${joinId.trim()}`);
+        if (joinRoomId.trim()) {
+            navigate(`/room/${joinRoomId}`, { state: { password: joinPassword } });
         }
     };
 
     return (
-        <div className="home" style={{ display: 'flex', flexDirection: 'column', gap: '2rem', alignItems: 'center', marginTop: '2rem' }}>
-            <div className="card" style={{ width: '100%', maxWidth: '400px' }}>
-                <h2 style={{ marginTop: 0 }}>Start Sharing</h2>
-                <p style={{ color: 'var(--text-color)', opacity: 0.8 }}>Create a new room and share your screen.</p>
-                <button onClick={startSharing} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center', width: '100%' }}>
-                    <Monitor size={20} /> Create Room
-                </button>
-            </div>
+        <div className="home">
+            <h1>P2P Screen Share</h1>
 
-            <div style={{ fontWeight: 'bold', opacity: 0.5 }}>OR</div>
+            <div className="card-container" style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <div className="card">
+                    <h2><Monitor size={24} style={{ verticalAlign: 'middle' }} /> Create Room</h2>
+                    <p>Share your screen with others</p>
+                    <div style={{ marginBottom: '1rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                            <Lock size={16} />
+                            <label>Set Password (Optional)</label>
+                        </div>
+                        <input
+                            type="password"
+                            placeholder="Enter password"
+                            value={createPassword}
+                            onChange={(e) => setCreatePassword(e.target.value)}
+                            style={{ width: '100%', boxSizing: 'border-box', padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+                        />
+                    </div>
+                    <button onClick={handleCreateRoom}>Create Room</button>
+                </div>
 
-            <div className="card" style={{ width: '100%', maxWidth: '400px' }}>
-                <h2 style={{ marginTop: 0 }}>Join Room</h2>
-                <p style={{ color: 'var(--text-color)', opacity: 0.8 }}>Enter a Room ID to watch a stream.</p>
-                <form onSubmit={joinRoom} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    <input
-                        type="text"
-                        placeholder="Room ID"
-                        value={joinId}
-                        onChange={(e) => setJoinId(e.target.value)}
-                        style={{ width: '100%', boxSizing: 'border-box' }}
-                    />
-                    <button type="submit" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
-                        <Users size={20} /> Join Room
-                    </button>
-                </form>
+                <div className="card">
+                    <h2><Users size={24} style={{ verticalAlign: 'middle' }} /> Join Room</h2>
+                    <p>View a shared screen</p>
+                    <form onSubmit={handleJoinRoom} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                        <input
+                            type="text"
+                            placeholder="Enter Room ID"
+                            value={joinRoomId}
+                            onChange={(e) => setJoinRoomId(e.target.value)}
+                            required
+                            style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+                        />
+                        <input
+                            type="password"
+                            placeholder="Enter Room Password"
+                            value={joinPassword}
+                            onChange={(e) => setJoinPassword(e.target.value)}
+                            style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+                        />
+                        <button type="submit">Join Room</button>
+                    </form>
+                </div>
             </div>
         </div>
     );
