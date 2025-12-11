@@ -250,6 +250,24 @@ input {
   text-decoration: underline;
 }
 
+.license-card {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.license-content {
+  background: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 70vh;
+  overflow: auto;
+  margin-top: 0.75rem;
+}
+
 .guest-controls {
   display: flex;
   gap: 1.5rem;
