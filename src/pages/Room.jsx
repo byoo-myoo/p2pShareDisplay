@@ -28,6 +28,9 @@ function Room() {
     setCursorColor,
     startShare,
     stopShare,
+    toggleAudioMute,
+    isAudioMuted,
+    hasAudioTrack,
     handleMouseMove,
     handleMouseDown,
     handleMouseUp,
@@ -70,7 +73,16 @@ function Room() {
 
       <QRModal open={showQRCode} roomUrl={roomUrl} onClose={() => setShowQRCode(false)} />
 
-      {isHost === true && <HostControls stream={stream} onStart={startShare} onStop={stopShare} />}
+      {isHost === true && (
+        <HostControls
+          stream={stream}
+          onStart={startShare}
+          onStop={stopShare}
+          onToggleAudio={toggleAudioMute}
+          isAudioMuted={isAudioMuted}
+          hasAudioTrack={hasAudioTrack}
+        />
+      )}
 
       {!isHost && isHost !== null && (
         <GuestControls

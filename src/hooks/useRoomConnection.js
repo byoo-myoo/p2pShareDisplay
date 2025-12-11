@@ -67,7 +67,14 @@ export default function useRoomConnection({ roomId, initialPassword }) {
     initializeGuest,
   });
 
-  const { startShare, stopShare } = useScreenShare({ addLog, callGuest, connRef, peerRef, setStream, streamRef });
+  const { startShare, stopShare, toggleAudioMute, isAudioMuted, hasAudioTrack } = useScreenShare({
+    addLog,
+    callGuest,
+    connRef,
+    peerRef,
+    setStream,
+    streamRef,
+  });
 
   const { handleMouseMove, handleMouseDown, handleMouseUp, handleMouseLeave } = useCursorSync({
     isHost,
@@ -96,6 +103,9 @@ export default function useRoomConnection({ roomId, initialPassword }) {
     setCursorColor,
     startShare,
     stopShare,
+    toggleAudioMute,
+    isAudioMuted,
+    hasAudioTrack,
     handleMouseMove,
     handleMouseDown,
     handleMouseUp,

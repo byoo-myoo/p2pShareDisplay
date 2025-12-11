@@ -1,22 +1,46 @@
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 export default function useScreenShare({ addLog, callGuest, connRef, peerRef, setStream, streamRef }) {
+  const [hasAudioTrack, setHasAudioTrack] = useState(false);
+  const [isAudioMuted, setIsAudioMuted] = useState(false);
+
   const stopShare = useCallback(() => {
     if (streamRef.current) {
       streamRef.current.getTracks().forEach(track => track.stop());
     }
     setStream(null);
     streamRef.current = null;
+    setHasAudioTrack(false);
+    setIsAudioMuted(false);
   }, [setStream, streamRef]);
 
   const startShare = useCallback(async () => {
     try {
-      addLog('Requesting display media...');
+      addLog('Requesting display media (video + audio)...');
       const s = await navigator.mediaDevices.getDisplayMedia({
         video: { cursor: 'always' },
-        audio: false,
+        audio: true,
       });
       addLog(`Got display media: ${s.id}`);
+      const audioTracks = s.getAudioTracks();
+      const hasAudio = audioTracks.length > 0;
+      setHasAudioTrack(hasAudio);
+      setIsAudioMuted(false);
+
+      if (hasAudio) {
+        addLog(`Captured audio track: ${audioTracks[0].label || 'unnamed'}`);
+        audioTracks.forEach(track => {
+          track.enabled = true;
+          track.onended = () => {
+            addLog('Audio track ended');
+            setHasAudioTrack(false);
+            setIsAudioMuted(false);
+          };
+        });
+      } else {
+        addLog('No audio track available from the captured source');
+      }
+
       setStream(s);
       streamRef.current = s;
 
@@ -39,5 +63,28 @@ export default function useScreenShare({ addLog, callGuest, connRef, peerRef, se
     }
   }, [addLog, callGuest, connRef, peerRef, setStream, streamRef, stopShare]);
 
-  return { startShare, stopShare };
+  const toggleAudioMute = useCallback(() => {
+    const currentStream = streamRef.current;
+    if (!currentStream) {
+      addLog('No active stream to toggle audio');
+      return;
+    }
+
+    const audioTracks = currentStream.getAudioTracks();
+    if (!audioTracks.length) {
+      addLog('No audio track to mute/unmute');
+      return;
+    }
+
+    setIsAudioMuted(prev => {
+      const next = !prev;
+      audioTracks.forEach(track => {
+        track.enabled = !next;
+      });
+      addLog(next ? 'Audio muted' : 'Audio unmuted');
+      return next;
+    });
+  }, [addLog, streamRef]);
+
+  return { startShare, stopShare, toggleAudioMute, isAudioMuted, hasAudioTrack };
 }
