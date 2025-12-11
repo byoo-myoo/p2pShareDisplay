@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
+import thirdPartyLicensesUrl from '../THIRD-PARTY-LICENSES.md?url';
 import Home from './pages/Home';
 import Room from './pages/Room';
 
@@ -31,10 +32,26 @@ function App() {
             {darkMode ? <Sun size={24} /> : <Moon size={24} />}
           </button>
         </header>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/room/:roomId" element={<Room />} />
-        </Routes>
+
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/room/:roomId" element={<Room />} />
+          </Routes>
+        </main>
+
+        <footer className="site-footer">
+          <div className="footer-title">P2P Screen Share</div>
+          <div className="footer-links">
+            <a href={thirdPartyLicensesUrl} target="_blank" rel="noreferrer">
+              Third-party licenses
+            </a>
+            <span aria-hidden="true">•</span>
+            <a href="https://github.com/myooken/p2pShareDisplay" target="_blank" rel="noreferrer">
+              GitHub repository
+            </a>
+          </div>
+        </footer>
       </div>
     </Router>
   );
