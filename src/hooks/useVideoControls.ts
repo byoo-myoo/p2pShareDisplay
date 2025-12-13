@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-export default function useVideoControls(stream, onLog) {
-  const videoRef = useRef(null);
-  const containerRef = useRef(null);
+type LogFn = (message: string) => void;
+
+export default function useVideoControls(stream: MediaStream | null, onLog?: LogFn) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const [isPiP, setIsPiP] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 

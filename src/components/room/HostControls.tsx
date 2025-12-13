@@ -1,7 +1,16 @@
 import React from 'react';
 import { Share, Volume2, VolumeX } from 'lucide-react';
 
-function HostControls({ stream, onStart, onStop, onToggleAudio, isAudioMuted, hasAudioTrack }) {
+type HostControlsProps = {
+  stream: MediaStream | null;
+  onStart: () => void;
+  onStop: () => void;
+  onToggleAudio: () => void;
+  isAudioMuted: boolean;
+  hasAudioTrack: boolean;
+};
+
+function HostControls({ stream, onStart, onStop, onToggleAudio, isAudioMuted, hasAudioTrack }: HostControlsProps) {
   return (
     <div className="controls" style={{ flexWrap: 'wrap' }}>
       {!stream ? (

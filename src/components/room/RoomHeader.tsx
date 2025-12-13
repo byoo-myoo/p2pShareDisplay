@@ -1,7 +1,15 @@
 import React from 'react';
 import { Copy, Check, QrCode } from 'lucide-react';
 
-function RoomHeader({ roomId, status, onCopy, copied, onShowQRCode }) {
+type RoomHeaderProps = {
+  roomId: string;
+  status: string;
+  onCopy: () => void;
+  copied: boolean;
+  onShowQRCode: () => void;
+};
+
+function RoomHeader({ roomId, status, onCopy, copied, onShowQRCode }: RoomHeaderProps) {
   return (
     <div className="header" style={{ justifyContent: 'center', gap: '1rem', flexDirection: 'column', padding: '0 1rem' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexDirection: 'column' }}>

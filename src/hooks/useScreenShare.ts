@@ -1,6 +1,20 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState, type Dispatch, type MutableRefObject, type SetStateAction } from 'react';
+import type Peer from 'peerjs';
+import type { DataConnection } from 'peerjs';
+import type { LogEntry } from './useLogs';
 
-export default function useScreenShare({ addLog, callGuest, connRef, peerRef, setStream, streamRef }) {
+type CursorMediaConstraints = MediaTrackConstraints & { cursor?: 'always' | 'motion' | 'never' };
+
+type UseScreenShareParams = {
+  addLog: (msg: string, type?: LogEntry['type']) => void;
+  callGuest: (peer: Peer | null, guestId: string, mediaStream: MediaStream) => void;
+  connRef: MutableRefObject<DataConnection | null>;
+  peerRef: MutableRefObject<Peer | null>;
+  setStream: Dispatch<SetStateAction<MediaStream | null>>;
+  streamRef: MutableRefObject<MediaStream | null>;
+};
+
+export default function useScreenShare({ addLog, callGuest, connRef, peerRef, setStream, streamRef }: UseScreenShareParams) {
   const [hasAudioTrack, setHasAudioTrack] = useState(false);
   const [isAudioMuted, setIsAudioMuted] = useState(false);
 
@@ -18,7 +32,7 @@ export default function useScreenShare({ addLog, callGuest, connRef, peerRef, se
     try {
       addLog('Requesting display media (video + audio)...');
       const s = await navigator.mediaDevices.getDisplayMedia({
-        video: { cursor: 'always' },
+        video: { cursor: 'always' } as CursorMediaConstraints,
         audio: true,
       });
       addLog(`Got display media: ${s.id}`);

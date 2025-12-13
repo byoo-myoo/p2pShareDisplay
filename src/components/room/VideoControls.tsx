@@ -1,7 +1,25 @@
 import React from 'react';
 import { Play, PictureInPicture, Maximize, Minimize } from 'lucide-react';
 
-function VideoControls({ isHost, isFullscreen, toggleFullscreen, togglePiP, manualPlay, scaleMode, toggleScaleMode }) {
+type VideoControlsProps = {
+  isHost: boolean;
+  isFullscreen: boolean;
+  toggleFullscreen: () => void;
+  togglePiP: () => void;
+  manualPlay: () => void;
+  scaleMode: 'contain' | 'cover';
+  toggleScaleMode: () => void;
+};
+
+function VideoControls({
+  isHost,
+  isFullscreen,
+  toggleFullscreen,
+  togglePiP,
+  manualPlay,
+  scaleMode,
+  toggleScaleMode,
+}: VideoControlsProps) {
   return (
     <div
       className="video-controls video-controls-overlay"

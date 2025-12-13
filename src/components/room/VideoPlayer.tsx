@@ -3,6 +3,19 @@ import useVideoControls from '../../hooks/useVideoControls';
 import VideoControls from './VideoControls';
 import PiPBanner from './PiPBanner';
 
+type RemoteCursor = { x: number; y: number; visible: boolean; color: string };
+
+type VideoPlayerProps = {
+  stream: MediaStream | null;
+  isHost: boolean;
+  remoteCursor: RemoteCursor;
+  onMouseMove: (e: React.MouseEvent<HTMLDivElement>) => void;
+  onMouseDown: (e: React.MouseEvent<HTMLDivElement>) => void;
+  onMouseUp: (e: React.MouseEvent<HTMLDivElement>) => void;
+  onMouseLeave: (e: React.MouseEvent<HTMLDivElement>) => void;
+  onLog?: (message: string) => void;
+};
+
 function VideoPlayer({
   stream,
   isHost,
@@ -12,12 +25,12 @@ function VideoPlayer({
   onMouseUp,
   onMouseLeave,
   onLog,
-}) {
+}: VideoPlayerProps) {
   const { videoRef, containerRef, isPiP, isFullscreen, toggleFullscreen, togglePiP, manualPlay } = useVideoControls(
     stream,
     onLog
   );
-  const [scaleMode, setScaleMode] = useState('contain'); // 'contain' or 'cover'
+  const [scaleMode, setScaleMode] = useState<'contain' | 'cover'>('contain');
 
   const toggleScaleMode = () => {
     setScaleMode(prev => (prev === 'contain' ? 'cover' : 'contain'));

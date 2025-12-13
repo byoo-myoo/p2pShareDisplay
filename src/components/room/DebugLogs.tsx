@@ -1,6 +1,13 @@
 import React from 'react';
+import type { LogEntry } from '../../hooks/useLogs';
 
-function DebugLogs({ open, logs, onClear }) {
+type DebugLogsProps = {
+  open: boolean;
+  logs: LogEntry[];
+  onClear: () => void;
+};
+
+function DebugLogs({ open, logs, onClear }: DebugLogsProps) {
   if (!open) return null;
 
   return (

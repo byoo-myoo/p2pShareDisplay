@@ -1,7 +1,13 @@
 import React from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
-function QRModal({ open, roomUrl, onClose }) {
+type QRModalProps = {
+  open: boolean;
+  roomUrl: string;
+  onClose: () => void;
+};
+
+function QRModal({ open, roomUrl, onClose }: QRModalProps) {
   if (!open) return null;
 
   return (

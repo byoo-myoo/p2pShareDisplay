@@ -1,9 +1,17 @@
 import React from 'react';
 import { Eye, MousePointer2 } from 'lucide-react';
+import type { CursorMode } from '../../hooks/useCursorSync';
 
 const cursorColors = ['#ef4444', '#3b82f6', '#22c55e', '#eab308', '#a855f7'];
 
-function GuestControls({ cursorMode, setCursorMode, cursorColor, setCursorColor }) {
+type GuestControlsProps = {
+  cursorMode: CursorMode;
+  setCursorMode: (mode: CursorMode) => void;
+  cursorColor: string;
+  setCursorColor: (color: string) => void;
+};
+
+function GuestControls({ cursorMode, setCursorMode, cursorColor, setCursorColor }: GuestControlsProps) {
   return (
     <div className="guest-controls" style={{ flexWrap: 'wrap' }}>
       <div className="control-group">

@@ -1,7 +1,13 @@
-import { useEffect } from 'react';
-import Peer from 'peerjs';
+import { useEffect, type MutableRefObject } from 'react';
+import Peer, { type DataConnection } from 'peerjs';
+import type { LogEntry } from './useLogs';
 
-const peerCache = new Map();
+type TimedPeer = Peer & { _cleanupTimer?: ReturnType<typeof setTimeout> | null };
+type CursorState = { x: number; y: number; visible: boolean; color: string };
+type CursorMessage = { type: 'cursor'; x: number; y: number; visible: boolean; color?: string };
+type AuthMessage = { type: 'auth'; password?: string };
+
+const peerCache = new Map<string, TimedPeer>();
 
 export default function usePeerLifecycle({
   roomId,
@@ -15,6 +21,18 @@ export default function usePeerLifecycle({
   peerRef,
   callGuest,
   initializeGuest,
+}: {
+  roomId: string;
+  password?: string;
+  addLog: (msg: string, type?: LogEntry['type']) => void;
+  setIsHost: (value: boolean) => void;
+  setStatus: (value: string) => void;
+  setRemoteCursor: (cursor: CursorState) => void;
+  streamRef: MutableRefObject<MediaStream | null>;
+  connRef: MutableRefObject<DataConnection | null>;
+  peerRef: MutableRefObject<Peer | null>;
+  callGuest: (peer: Peer | null, guestId: string, mediaStream: MediaStream) => void;
+  initializeGuest: () => void;
 }) {
   useEffect(() => {
     let peer = peerCache.get(roomId);
@@ -27,13 +45,13 @@ export default function usePeerLifecycle({
       }
     } else {
       addLog(`Initializing new Peer with ID: ${roomId}`);
-      peer = new Peer(roomId, { debug: 2 });
+      peer = new Peer(roomId, { debug: 2 }) as TimedPeer;
       peerCache.set(roomId, peer);
     }
 
     peerRef.current = peer;
 
-    const handleOpen = id => {
+    const handleOpen = (id: string) => {
       addLog(`Peer Opened: ${id}`);
       if (id === roomId) {
         setIsHost(true);
@@ -44,22 +62,23 @@ export default function usePeerLifecycle({
       }
     };
 
-    const handleConnection = conn => {
+    const handleConnection = (conn: DataConnection) => {
       addLog(`Received connection from: ${conn.peer}`);
       connRef.current = conn;
 
-      const handleData = data => {
+      const handleData = (data: CursorMessage | AuthMessage) => {
         if (data.type === 'auth') {
           if (data.password === password) {
             addLog('Password verified. Access granted.');
             conn.send({ type: 'auth-success' });
-            setStatus('Guest connected');
+            setStatus('Connected to Host');
             if (streamRef.current) {
               callGuest(peer, conn.peer, streamRef.current);
             }
           } else {
             addLog('Invalid password attempt.', 'error');
             conn.send({ type: 'auth-fail' });
+            setStatus('Authentication Failed');
             setTimeout(() => conn.close(), 500);
           }
         } else if (data.type === 'cursor') {
@@ -77,12 +96,12 @@ export default function usePeerLifecycle({
         conn.on('data', handleData);
       } else {
         conn.on('open', () => {
-          setStatus('Guest connected');
+          setStatus('Connected to Host');
           conn.send({ type: 'auth-success' });
           if (streamRef.current) {
             callGuest(peer, conn.peer, streamRef.current);
           }
-          conn.on('data', data => {
+          conn.on('data', (data: CursorMessage) => {
             if (data.type === 'cursor') {
               setRemoteCursor({
                 x: data.x,
@@ -96,7 +115,7 @@ export default function usePeerLifecycle({
       }
     };
 
-    const handleError = err => {
+    const handleError = (err: { type: string }) => {
       addLog(`Peer error: ${err.type}`, 'error');
       if (err.type === 'unavailable-id') {
         addLog('ID taken. Checking if we should be Guest...');
@@ -124,7 +143,7 @@ export default function usePeerLifecycle({
         streamRef.current.getTracks().forEach(track => track.stop());
       }
       if (peerRef.current) {
-        const p = peerRef.current;
+        const p = peerRef.current as TimedPeer;
         p._cleanupTimer = setTimeout(() => {
           addLog('Destroying peer after timeout');
           p.destroy();

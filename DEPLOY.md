@@ -1,25 +1,30 @@
-# Deploying to GitHub Pages
+# GitHub Pages へのデプロイ
 
-p2pShareDisplay は GitHub Actions で GitHub Pages に自動デプロイする構成になっています。
+このプロジェクトは、GitHub Actions を使用して GitHub Pages に自動的にデプロイされるように設定されています。
 
-## 1. GitHub Pages の設定
-1. リポジトリの `Settings > Pages` を開き、ソースに **GitHub Actions** を選択する。  
-2. `package.json` の `homepage` を実ドメインに更新する（例: `https://myooken.github.io/p2pShareDisplay`）。  
-3. `vite.config.js` の `base: './'` と `HashRouter` によりリロード時の 404 を回避済み。
+## 前提条件
 
-## 2. ビルドコマンド
-```bash
-npm run build
-npm run preview   # 必要に応じてローカル確認
+1. **GitHub リポジトリ**: このプロジェクトが GitHub リポジトリにプッシュされていることを確認します。
+2. **Package.json**: `package.json` の `homepage` フィールドを実際の G​​itHub Pages URL に更新します。
+```json
+"homepage": "https://<YOUR_USERNAME>.github.io/<YOUR_REPO_NAME>"
 ```
 
-## 3. デプロイ方法（GitHub Actions）
-1. `main` ブランチに push する。  
-2. `.github/workflows/deploy.yml` が走り、Node 20 で `npm ci` → `npm run build` → Pages へアップロード。  
-3. 完了すると Pages 環境（`github-pages`）に公開される。
+## GitHub Pages の有効化
 
-## 4. エラーが出た場合の対処
-- **404 / 空白画面**: `homepage` の URL、`base: './'` 設定、Pages のブランチ/ソース設定を確認。  
-- **ルーティング不整合**: HashRouter を使うため URL に `#/` が含まれているか確認。  
-- **キャッシュ問題**: デプロイ直後はブラウザキャッシュや Pages CDN をクリアする。  
-- **Action 失敗**: `npm ci` 失敗時は lockfile を最新にする、Secrets/Permissions の不足を確認する。
+1. GitHub 上のリポジトリに移動します。
+2. **設定** > **ページ** に移動します。
+3. **ビルドとデプロイ** で、ソースとして **GitHub Actions** を選択します。
+* *注: 「GitHub Actions」が表示されない場合は、まず `.github/workflows/deploy.yml` ファイルをプッシュする必要がある可能性があります。*
+
+## デプロイプロセス
+
+1. 変更を `main` ブランチにプッシュします。
+2. `.github/workflows/deploy.yml` で定義された GitHub Action が自動的に実行されます。
+3. プロジェクトがビルドされ、`gh-pages` 環境にデプロイされます。
+4. 完了すると、リポジトリ設定で指定した URL (通常は `[https://myooken.github.io/p2pShareDisplay](https://myooken.github.io/p2pShareDisplay)`) でサイトが公開されます。
+
+## トラブルシューティング
+
+- **404 エラー**: 404 エラーが表示された場合は、`vite.config.js` の `base` が `'./'` に設定されていること（設定されています）と、`package.json` の `homepage` が正しいことを確認してください。
+- **ルーティングの問題**: アプリは `HashRouter` を使用しているため、GitHub Pages でページの再読み込みは正常に動作するはずです。

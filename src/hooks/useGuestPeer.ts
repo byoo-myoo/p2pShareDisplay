@@ -1,5 +1,23 @@
-import { useCallback } from 'react';
-import Peer from 'peerjs';
+import { useCallback, type Dispatch, type MutableRefObject, type SetStateAction } from 'react';
+import Peer, { type DataConnection, type MediaConnection } from 'peerjs';
+import type { LogEntry } from './useLogs';
+
+type AuthResponseMessage = { type: 'auth-success' } | { type: 'auth-fail' };
+
+type UseGuestPeerParams = {
+  roomId: string;
+  password?: string;
+  addLog: (msg: string, type?: LogEntry['type']) => void;
+  setIsHost: Dispatch<SetStateAction<boolean | null>>;
+  setStatus: Dispatch<SetStateAction<string>>;
+  setIsAuthenticated: Dispatch<SetStateAction<boolean>>;
+  setShowAuthModal: Dispatch<SetStateAction<boolean>>;
+  setStream: Dispatch<SetStateAction<MediaStream | null>>;
+  streamRef: MutableRefObject<MediaStream | null>;
+  connRef: MutableRefObject<DataConnection | null>;
+  peerRef: MutableRefObject<Peer | null>;
+  authRef: MutableRefObject<boolean>;
+};
 
 export default function useGuestPeer({
   roomId,
@@ -14,7 +32,7 @@ export default function useGuestPeer({
   connRef,
   peerRef,
   authRef,
-}) {
+}: UseGuestPeerParams) {
   return useCallback(() => {
     const guest = new Peer();
     peerRef.current = guest;
@@ -32,7 +50,7 @@ export default function useGuestPeer({
         conn.send({ type: 'auth', password: password || '' });
       });
 
-      conn.on('data', data => {
+      conn.on('data', (data: AuthResponseMessage) => {
         if (data.type === 'auth-success') {
           addLog('Authentication successful');
           setIsAuthenticated(true);
@@ -60,7 +78,7 @@ export default function useGuestPeer({
       });
     });
 
-    guest.on('call', call => {
+    guest.on('call', (call: MediaConnection) => {
       addLog(`Guest received call from: ${call.peer}`);
       call.answer();
       call.on('stream', remoteStream => {

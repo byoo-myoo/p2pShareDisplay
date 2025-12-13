@@ -1,6 +1,13 @@
 import React from 'react';
 
-function AuthModal({ open, authInput, onChange, onSubmit }) {
+type AuthModalProps = {
+  open: boolean;
+  authInput: string;
+  onChange: (value: string) => void;
+  onSubmit: () => void;
+};
+
+function AuthModal({ open, authInput, onChange, onSubmit }: AuthModalProps) {
   if (!open) return null;
 
   return (

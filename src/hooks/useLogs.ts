@@ -1,9 +1,11 @@
 import { useCallback, useState } from 'react';
 
-export default function useLogs() {
-  const [logs, setLogs] = useState([]);
+export type LogEntry = { msg: string; type: 'info' | 'error' };
 
-  const addLog = useCallback((msg, type = 'info') => {
+export default function useLogs() {
+  const [logs, setLogs] = useState<LogEntry[]>([]);
+
+  const addLog = useCallback((msg: string, type: LogEntry['type'] = 'info') => {
     const timestamp = new Date().toLocaleTimeString();
     const entry = `[${timestamp}] ${msg}`;
     console.log(entry);

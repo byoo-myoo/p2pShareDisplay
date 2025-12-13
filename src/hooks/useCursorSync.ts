@@ -1,10 +1,23 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState, type MouseEvent as ReactMouseEvent, type MutableRefObject } from 'react';
+import type { DataConnection } from 'peerjs';
 
-export default function useCursorSync({ isHost, cursorMode, cursorColor, connRef }) {
+export type CursorMode = 'always' | 'click';
+
+export default function useCursorSync({
+  isHost,
+  cursorMode,
+  cursorColor,
+  connRef,
+}: {
+  isHost: boolean | null;
+  cursorMode: CursorMode;
+  cursorColor: string;
+  connRef: MutableRefObject<DataConnection | null>;
+}) {
   const [isMouseDown, setIsMouseDown] = useState(false);
 
   const sendCursor = useCallback(
-    (e, visible) => {
+    (e: ReactMouseEvent<HTMLDivElement>, visible: boolean) => {
       if (isHost || !connRef.current) return;
 
       const rect = e.currentTarget.getBoundingClientRect();
@@ -17,7 +30,7 @@ export default function useCursorSync({ isHost, cursorMode, cursorColor, connRef
   );
 
   const handleMouseMove = useCallback(
-    e => {
+    (e: ReactMouseEvent<HTMLDivElement>) => {
       if (cursorMode === 'always') {
         sendCursor(e, true);
       } else if (cursorMode === 'click' && isMouseDown) {
@@ -28,7 +41,7 @@ export default function useCursorSync({ isHost, cursorMode, cursorColor, connRef
   );
 
   const handleMouseDown = useCallback(
-    e => {
+    (e: ReactMouseEvent<HTMLDivElement>) => {
       setIsMouseDown(true);
       if (cursorMode === 'click') {
         sendCursor(e, true);
@@ -38,7 +51,7 @@ export default function useCursorSync({ isHost, cursorMode, cursorColor, connRef
   );
 
   const handleMouseUp = useCallback(
-    e => {
+    (e: ReactMouseEvent<HTMLDivElement>) => {
       setIsMouseDown(false);
       if (cursorMode === 'click') {
         sendCursor(e, false);

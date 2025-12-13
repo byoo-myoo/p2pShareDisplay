@@ -10,9 +10,12 @@ import VideoPlayer from '../components/room/VideoPlayer';
 import DebugLogs from '../components/room/DebugLogs';
 import useRoomConnection from '../hooks/useRoomConnection';
 
+type LocationState = { password?: string };
+
 function Room() {
-  const { roomId } = useParams();
+  const { roomId = '' } = useParams<{ roomId: string }>();
   const location = useLocation();
+  const initialPassword = (location.state as LocationState | undefined)?.password;
   const [copied, setCopied] = useState(false);
   const [showQRCode, setShowQRCode] = useState(false);
   const [showLogs, setShowLogs] = useState(false);
@@ -42,7 +45,7 @@ function Room() {
     logs,
     clearLogs,
     addLog,
-  } = useRoomConnection({ roomId, initialPassword: location.state?.password });
+  } = useRoomConnection({ roomId, initialPassword });
 
   const roomUrl = useMemo(() => {
     let hostname = window.location.hostname;
