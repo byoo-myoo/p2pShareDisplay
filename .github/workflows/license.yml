@@ -9,7 +9,7 @@ on:
       - yarn.lock
       - LICENSE
       - docs/licenses/**
-      - scripts/**
+      - _script/**
       - .github/workflows/license.yml
   pull_request:
     paths:
@@ -19,7 +19,7 @@ on:
       - yarn.lock
       - LICENSE
       - docs/licenses/**
-      - scripts/**
+      - _script/**
       - .github/workflows/license.yml
   workflow_dispatch:
     inputs:
@@ -65,13 +65,13 @@ jobs:
             > THIRD-PARTY-LICENSES.md
 
       - name: Collect NOTICE files
-        run: node scripts/collect-notices.mjs
+        run: node _script/collect-notices.mjs
 
       - name: Check license policy
-        run: node scripts/check-licenses.mjs
+        run: node _script/check-licenses.mjs
 
       - name: Build license page
-        run: node scripts/build-license-page.mjs
+        run: node _script/build-license-page.mjs
 
       - name: Upload reports
         if: always()

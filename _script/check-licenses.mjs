@@ -1,97 +1,245 @@
-// scripts/check-licenses.mjs
+#!/usr/bin/env node
+/**
+ * License policy checker
+ *
+ * - Validates project license (MIT)
+ * - Evaluates dependency licenses from licenses.json (license-checker output)
+ * - Verifies required license texts / NOTICE / attribution files exist under docs/licenses
+ * - Emits GitHub Actions annotations and a report for artifact upload
+ */
 import fs from "node:fs";
+import path from "node:path";
 
-const licensesJsonPath = "licenses.json"; // npx license-checker --json で作るやつ
-const pkgJsonPath = "package.json";
+const LICENSES_JSON = "licenses.json";
+const PKG_JSON = "package.json";
+const LICENSE_TEXTS_DIR = path.join("docs", "licenses", "texts");
+const NOTICES_DIR = path.join("docs", "licenses", "notices");
+const ATTRIBUTION_PATH = path.join("docs", "licenses", "ATTRIBUTION.md");
+const REPORTS_DIR = "reports";
 
-// 1. プロジェクト自身のライセンス確認
-const pkg = JSON.parse(fs.readFileSync(pkgJsonPath, "utf8"));
-const projectLicense = pkg.license ?? "(not set)";
+const EXPECTED_PROJECT_LICENSE = "MIT";
 
-// 将来ライセンス変えたくなったらここだけ書き換えればいい
-const expectedProjectLicense = "MIT";
-
-if (projectLicense !== expectedProjectLicense) {
-    console.error(
-        `[ERROR] package.json の license が想定と違う。期待値: ${expectedProjectLicense}, 実際: ${projectLicense}`
-    );
-    process.exit(1);
-}
-
-// 自分自身の package 名+version（license-checker のキーと合わせる）
-const projectName = pkg.name;
-const projectVersion = pkg.version;
-const projectId = `${projectName}@${projectVersion}`;
-
-// 2. 依存ライセンス一覧の読み込み
-const text = fs.readFileSync(licensesJsonPath, "utf8");
-const data = JSON.parse(text); // license-checker の --json 出力
-
-// 許可ライセンスと禁止ライセンスの簡易ポリシー
-const allowExact = new Set([
+// Allow list is strict; extend when a newly added dependency uses a different allowed license.
+const ALLOWED_LICENSES = new Set([
     "MIT",
     "ISC",
     "BSD-2-Clause",
     "BSD-3-Clause",
     "Apache-2.0",
-    // ↓必要に応じて追加
-    "Python-2.0",
+    "CC0-1.0",
+    "CC-BY-3.0",
     "CC-BY-4.0",
+    "Python-2.0",
 ]);
 
-const denyPatterns = [
-    /^GPL/i,
-    /^AGPL/i,
-    /^LGPL/i,
-    /^MPL/i,
-    /^CC-BY-NC/i,
+const DENY_LICENSES = new Set(["UNLICENSED", "UNKNOWN"]);
+const DENY_PATTERNS = [/^GPL/i, /^AGPL/i, /^LGPL/i, /^MPL/i, /^CC-BY-NC/i];
+
+const errors = [];
+const warnings = [];
+const missingLicenseTexts = new Set();
+const missingNotices = [];
+
+const readJSON = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
+
+const safeNoticeName = (pkgId) => `${pkgId.replace(/\//g, "__")}.NOTICE.txt`;
+
+const ensureReportsDir = () => fs.mkdirSync(REPORTS_DIR, { recursive: true });
+
+const normalizeLicensesField = (licensesField) => {
+    const items = Array.isArray(licensesField) ? licensesField : [licensesField];
+    const tokens = [];
+
+    for (const item of items) {
+        if (!item) continue;
+        const normalized = String(item).replace(/[()]/g, " ");
+        for (const token of normalized.split(/[\s+]+/).filter(Boolean)) {
+            const upper = token.toUpperCase();
+            if (upper === "AND" || upper === "OR" || upper === "WITH") continue;
+            tokens.push(token);
+        }
+    }
+
+    return [...new Set(tokens)];
+};
+
+const annotateError = (message) => {
+    console.error(`::error ::${message}`);
+    errors.push(message);
+};
+
+const annotateWarning = (message) => {
+    console.warn(`::warning ::${message}`);
+    warnings.push(message);
+};
+
+const requireFile = (filePath, description) => {
+    if (!fs.existsSync(filePath)) {
+        annotateError(`Missing ${description}: ${filePath}`);
+    }
+};
+
+const writeStepSummary = (content) => {
+    if (!process.env.GITHUB_STEP_SUMMARY) return;
+    fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${content}\n`);
+};
+
+// 1) Project license check
+const pkg = readJSON(PKG_JSON);
+const projectLicense = pkg.license ?? "(not set)";
+const projectId = `${pkg.name}@${pkg.version}`;
+
+if (projectLicense !== EXPECTED_PROJECT_LICENSE) {
+    annotateError(
+        `package.json license must be "${EXPECTED_PROJECT_LICENSE}" but is "${projectLicense}".`
+    );
+}
+
+// 2) Dependency license scan
+if (!fs.existsSync(LICENSES_JSON)) {
+    annotateError(`licenses.json not found. Run "npx license-checker --json > ${LICENSES_JSON}".`);
+}
+
+let licensesData = {};
+try {
+    licensesData = readJSON(LICENSES_JSON);
+} catch (err) {
+    annotateError(`Failed to parse ${LICENSES_JSON}: ${err.message}`);
+}
+
+const dependencyEntries = Object.entries(licensesData);
+const uniqueLicenseIds = new Set();
+let ccByDetected = false;
+let scannedCount = 0;
+
+for (const [pkgId, info] of dependencyEntries) {
+    if (pkgId === projectId) continue; // Skip this project itself
+    scannedCount += 1;
+
+    const licenseIds = normalizeLicensesField(info.licenses);
+    if (licenseIds.length === 0) {
+        annotateError(`No license detected for ${pkgId}.`);
+        continue;
+    }
+
+    for (const licenseId of licenseIds) {
+        uniqueLicenseIds.add(licenseId);
+
+        if (DENY_LICENSES.has(licenseId)) {
+            annotateError(`Dependency ${pkgId} uses disallowed license "${licenseId}".`);
+            continue;
+        }
+
+        if (DENY_PATTERNS.some((re) => re.test(licenseId))) {
+            annotateError(`Dependency ${pkgId} uses prohibited license "${licenseId}".`);
+            continue;
+        }
+
+        if (!ALLOWED_LICENSES.has(licenseId)) {
+            annotateWarning(
+                `Dependency ${pkgId} uses license "${licenseId}" which is not in the allow list.`
+            );
+        }
+
+        const textPath = path.join(LICENSE_TEXTS_DIR, `${licenseId}.txt`);
+        if (!fs.existsSync(textPath)) {
+            missingLicenseTexts.add(licenseId);
+        }
+
+        if (licenseId.startsWith("CC-BY-")) {
+            ccByDetected = true;
+        }
+    }
+
+    if (licenseIds.includes("Apache-2.0") && info.noticeFile) {
+        const noticeTarget = path.join(NOTICES_DIR, safeNoticeName(pkgId));
+        if (!fs.existsSync(noticeTarget)) {
+            missingNotices.push({
+                package: pkgId,
+                expected: noticeTarget,
+                source: info.noticeFile,
+            });
+        }
+    }
+}
+
+// 3) Required artifacts
+for (const licenseId of missingLicenseTexts) {
+    annotateError(
+        `Missing license text for "${licenseId}". Place it at ${path.join(
+            LICENSE_TEXTS_DIR,
+            `${licenseId}.txt`
+        )}`
+    );
+}
+
+for (const notice of missingNotices) {
+    annotateError(
+        `Missing NOTICE for ${notice.package}. Expected file: ${notice.expected} (source hint: ${notice.source})`
+    );
+}
+
+if (ccByDetected) {
+    requireFile(ATTRIBUTION_PATH, "CC-BY attribution file");
+}
+
+// 4) Report + summary
+ensureReportsDir();
+const report = {
+    project: {
+        id: projectId,
+        license: projectLicense,
+        expectedLicense: EXPECTED_PROJECT_LICENSE,
+    },
+    stats: {
+        dependencyCount: scannedCount,
+        uniqueLicenses: [...uniqueLicenseIds].sort(),
+    },
+    missingLicenseTexts: [...missingLicenseTexts].sort(),
+    missingNotices,
+    ccByDetected,
+    warnings,
+    errors,
+};
+
+fs.writeFileSync(path.join(REPORTS_DIR, "license-check-report.json"), JSON.stringify(report, null, 2));
+
+const summaryLines = [
+    "## License Check",
+    `- Project license: ${projectLicense} (expected ${EXPECTED_PROJECT_LICENSE})`,
+    `- Dependencies scanned: ${scannedCount}`,
+    `- Unique licenses: ${[...uniqueLicenseIds].sort().join(", ") || "(none)"}`,
 ];
 
-const denyExact = new Set([
-    "UNLICENSED",
-    "UNKNOWN",
-]);
-
-const badDeps = [];
-
-for (const [pkgName, info] of Object.entries(data)) {
-    // 👇 自分自身（ルートプロジェクト）はここで除外
-    if (pkgName === projectId) {
-        continue;
-    }
-
-    const lic = info.licenses || "UNKNOWN";
-
-    // 明示的に許可されているなら OK
-    if (allowExact.has(lic)) continue;
-
-    // 明示的に禁止
-    if (denyExact.has(lic)) {
-        badDeps.push({ pkgName, lic, reason: "denyExact" });
-        continue;
-    }
-
-    // パターンマッチ（GPL*, LGPL* など）
-    if (denyPatterns.some((re) => re.test(lic))) {
-        badDeps.push({ pkgName, lic, reason: "denyPattern" });
-        continue;
-    }
-
-    // どちらでもないものは警告として扱う
-    console.warn(
-        `[WARN] 許可/禁止のどちらにも含まれていないパッケージ："${lic}" ライセンス名： ${pkgName}`
+if (missingLicenseTexts.size > 0) {
+    summaryLines.push(
+        `- Missing license texts: ${[...missingLicenseTexts].sort().join(", ")}`
     );
 }
 
-// NG があれば CI 失敗にする
-if (badDeps.length > 0) {
-    console.error(
-        "\n[ERROR] ポリシーに反するライセンスを持つ依存が発見されました。："
-    );
-    for (const d of badDeps) {
-        console.error(`  - ${d.pkgName}: ${d.lic} (${d.reason})`);
-    }
-    process.exit(1);
+if (missingNotices.length > 0) {
+    summaryLines.push(`- Missing NOTICE files: ${missingNotices.length}`);
 }
 
-console.log("[OK] ライセンスチェック終了（MIT 前提で問題なし）");
+if (ccByDetected) {
+    summaryLines.push(
+        `- CC-BY detected: require ${ATTRIBUTION_PATH}`
+    );
+}
+
+if (warnings.length > 0) {
+    summaryLines.push(`- Warnings: ${warnings.length}`);
+}
+
+if (errors.length > 0) {
+    summaryLines.push(`- Errors: ${errors.length} (see annotations above)`);
+}
+
+writeStepSummary(`${summaryLines.join("\n")}\n`);
+
+if (errors.length > 0) {
+    process.exitCode = 1;
+    console.error(`[FAIL] License check failed with ${errors.length} error(s).`);
+} else {
+    console.log("[OK] License check passed.");
+}
