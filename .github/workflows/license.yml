@@ -83,11 +83,13 @@ jobs:
             licenses.json
             THIRD-PARTY-LICENSES.md
             docs/licenses/index.md
+            docs/licenses/index.html
             docs/licenses/THIRD-PARTY-LICENSES.md
             docs/licenses/licenses.json
             docs/licenses/texts/**
             docs/licenses/notices/**
             docs/licenses/ATTRIBUTION.md
+            public/licenses/**
 
       - name: Comment on PR (failure)
         if: >
@@ -126,7 +128,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add licenses.json THIRD-PARTY-LICENSES.md docs/licenses/index.md docs/licenses/THIRD-PARTY-LICENSES.md docs/licenses/licenses.json docs/licenses/notices docs/licenses/texts docs/licenses/ATTRIBUTION.md
+          git add licenses.json THIRD-PARTY-LICENSES.md docs/licenses/index.md docs/licenses/index.html docs/licenses/THIRD-PARTY-LICENSES.md docs/licenses/licenses.json docs/licenses/notices docs/licenses/texts docs/licenses/ATTRIBUTION.md public/licenses
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
