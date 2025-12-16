@@ -53,16 +53,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate licenses.json
-        run: npx license-checker --json > licenses.json
-
-      - name: Generate THIRD-PARTY-LICENSES.md
-        run: |
-          npx license-checker \
-            --production \
-            --relativeLicensePath \
-            --markdown \
-            > THIRD-PARTY-LICENSES.md
+      - name: Generate license reports (excluding private/self)
+        run: npm run license:scan
 
       - name: Collect NOTICE files
         run: node _script/collect-notices.mjs
