@@ -1784,12 +1784,6 @@
     "path": "/home/runner/work/p2pShareDisplay/p2pShareDisplay/node_modules/p-locate",
     "licenseFile": "/home/runner/work/p2pShareDisplay/p2pShareDisplay/node_modules/p-locate/license"
   },
-  "p2psharedisp@0.0.0": {
-    "licenses": "UNLICENSED",
-    "private": true,
-    "path": "/home/runner/work/p2pShareDisplay/p2pShareDisplay",
-    "licenseFile": "/home/runner/work/p2pShareDisplay/p2pShareDisplay/LICENSE"
-  },
   "parent-module@1.0.1": {
     "licenses": "MIT",
     "repository": "https://github.com/sindresorhus/parent-module",
