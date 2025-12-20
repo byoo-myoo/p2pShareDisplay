@@ -1,123 +1,67 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-type LicenseEntry = {
-  id: string;
-  file: string;
-  content: string;
-};
-
-const projectLicenseText =
-  Object.values(
-    import.meta.glob<string>('../../docs/licenses/PROJECT-LICENSE.txt', {
-      query: '?raw',
-      import: 'default',
-      eager: true,
-    })
-  )[0] || '';
-
-const thirdPartyList =
-  Object.values(
-    import.meta.glob<string>('../../docs/licenses/THIRD-PARTY-LICENSES.md', {
-      query: '?raw',
-      import: 'default',
-      eager: true,
-    })
-  )[0] || '';
-
-const attributionText =
-  Object.values(
-    import.meta.glob<string>('../../docs/licenses/ATTRIBUTION.md', {
-      query: '?raw',
-      import: 'default',
-      eager: true,
-    })
-  )[0] || '';
-
-const licenseTexts = Object.entries(
-  import.meta.glob<string>('../../docs/licenses/texts/*.txt', {
-    query: '?raw',
-    import: 'default',
-    eager: true,
-  })
-)
-  .map(([path, content]) => {
-    const file = path.split('/').pop() || path;
-    const id = file.replace(/\.txt$/i, '');
-    return { id, file, content } as LicenseEntry;
-  })
-  .sort((a, b) => a.id.localeCompare(b.id));
-
-const noticeEntries = Object.entries(
-  import.meta.glob<string>('../../docs/licenses/notices/*.txt', {
-    query: '?raw',
-    import: 'default',
-    eager: true,
-  })
-)
-  .map(([path, content]) => {
-    const file = path.split('/').pop() || path;
-    const id = file.replace(/\.txt$/i, '');
-    return { id, file, content } as LicenseEntry;
-  })
-  .sort((a, b) => a.id.localeCompare(b.id));
+type Status = 'loading' | 'ready' | 'missing' | 'error';
 
 function Licenses() {
+  const [licenseText, setLicenseText] = useState('');
+  const [status, setStatus] = useState<Status>('loading');
+  const [error, setError] = useState('');
+
+  const licenseUrl = `${import.meta.env.BASE_URL ?? '/'}THIRD-PARTY-LICENSE.md`;
+
+  useEffect(() => {
+    const controller = new AbortController();
+    setStatus('loading');
+    setError('');
+    setLicenseText('');
+
+    fetch(licenseUrl, { signal: controller.signal })
+      .then((res) => {
+        if (res.status === 404) {
+          setStatus('missing');
+          return null;
+        }
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}`);
+        }
+        return res.text();
+      })
+      .then((text) => {
+        if (controller.signal.aborted || text === null) return;
+        setLicenseText(text);
+        setStatus('ready');
+      })
+      .catch((err) => {
+        if (controller.signal.aborted) return;
+        setError(err?.message || 'Failed to load license file.');
+        setStatus('error');
+      });
+
+    return () => controller.abort();
+  }, [licenseUrl]);
+
   return (
     <div className="card license-card">
-      <h2 style={{ marginTop: 0 }}>Licenses</h2>
-
-      <section className="license-section">
-        <h3>Project license</h3>
-        {projectLicenseText ? (
-          <pre className="license-block">{projectLicenseText}</pre>
-        ) : (
-          <p>License file not found.</p>
-        )}
-      </section>
-
-      <section className="license-section">
-        <h3>Third-party summary</h3>
-        {thirdPartyList ? (
-          <pre className="license-block">{thirdPartyList}</pre>
-        ) : (
-          <p>No third-party summary available.</p>
-        )}
-      </section>
-
-      <section className="license-section">
-        <h3>License texts</h3>
-        {licenseTexts.length === 0 ? (
-          <p>No license texts found in docs/licenses/texts.</p>
-        ) : (
-          licenseTexts.map((entry) => (
-            <div key={entry.file} className="license-entry">
-              <div className="license-entry__title">{entry.id}</div>
-              <pre className="license-block">{entry.content}</pre>
-            </div>
-          ))
-        )}
-      </section>
-
-      <section className="license-section">
-        <h3>Notices</h3>
-        {noticeEntries.length === 0 ? (
-          <p>No notices required.</p>
-        ) : (
-          noticeEntries.map((entry) => (
-            <div key={entry.file} className="license-entry">
-              <div className="license-entry__title">{entry.id}</div>
-              <pre className="license-block">{entry.content}</pre>
-            </div>
-          ))
-        )}
-      </section>
-
-      {attributionText ? (
-        <section className="license-section">
-          <h3>Attribution</h3>
-          <pre className="license-block">{attributionText}</pre>
-        </section>
-      ) : null}
+      <h2 style={{ marginTop: 0 }}>Third-Party Licenses</h2>
+      {status === 'loading' && <p>Loading THIRD-PARTY-LICENSE.md...</p>}
+      {status === 'ready' && (
+        <pre className="license-text" aria-label="third-party-license">
+          {licenseText}
+        </pre>
+      )}
+      {status === 'missing' && (
+        <p className="license-message">
+          THIRD-PARTY-LICENSE.md not found. Run <code>npm run license:generate</code> to create it.
+        </p>
+      )}
+      {status === 'error' && (
+        <p className="license-message">
+          Could not load THIRD-PARTY-LICENSE.md{error ? `: ${error}` : '.'}
+        </p>
+      )}
+      <p className="license-note">
+        Generated with <code>@myooken/license-output</code>; displaying the markdown as-is.
+      </p>
     </div>
   );
 }

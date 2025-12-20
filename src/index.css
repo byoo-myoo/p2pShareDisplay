@@ -252,24 +252,11 @@ input {
 
 .license-card {
   text-align: left;
-  max-width: 100%;
+  max-width: 960px;
   margin: 0 auto 2rem;
 }
 
-.license-section {
-  margin-bottom: 1.5rem;
-}
-
-.license-entry {
-  margin-bottom: 1rem;
-}
-
-.license-entry__title {
-  font-weight: 600;
-  margin-bottom: 0.35rem;
-}
-
-.license-block {
+.license-text {
   margin: 0;
   background: var(--secondary-bg);
   border: 1px solid var(--border-color);
@@ -281,6 +268,16 @@ input {
   overflow: auto;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
   font-size: 0.95rem;
+}
+
+.license-message {
+  margin: 0.5rem 0;
+}
+
+.license-note {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .guest-controls {

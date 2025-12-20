@@ -16,14 +16,10 @@
     "format": "eslint . --fix",
     "preview": "vite preview",
     "test": "playwright test",
-    "license:scan": "npx license-checker --excludePrivatePackages --excludePackages p2psharedisp@0.0.0 --json > licenses.json && npx license-checker --excludePrivatePackages --excludePackages p2psharedisp@0.0.0 --production --relativeLicensePath --markdown > THIRD-PARTY-LICENSES.md",
-    "license:collect-notices": "node _script/collect-notices.mjs",
-    "license:check": "node _script/check-licenses.mjs",
-    "license:page": "node _script/build-license-page.mjs",
-    "license:all": "npm run license:scan && npm run license:collect-notices && npm run license:check && npm run license:page"
+    "license:generate": "node _script/generate-license-output.mjs",
+    "license:generate:strict": "node _script/generate-license-output.mjs --fail-on-missing"
   },
   "dependencies": {
-    "license-checker": "^25.0.1",
     "lucide-react": "^0.555.0",
     "peerjs": "^1.5.5",
     "qrcode.react": "^4.2.0",
@@ -33,6 +29,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@myooken/license-output": "^0.1.1",
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.0",
     "@types/react": "^19.2.5",
