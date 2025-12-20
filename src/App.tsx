@@ -3,7 +3,6 @@ import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
 import Home from './pages/Home';
 import Room from './pages/Room';
-import Licenses from './pages/Licenses';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,15 +46,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/room/:roomId" element={<Room />} />
-            <Route path="/licenses" element={<Licenses />} />
           </Routes>
         </main>
 
         <footer className="site-footer">
           <div className="footer-title">P2P Screen Share</div>
           <div className="footer-links">
-            <Link to="/licenses">Third-party licenses</Link>
-            <span aria-hidden="true">•</span>
             <a href="https://github.com/myooken/p2pShareDisplay" target="_blank" rel="noreferrer">
               GitHub repository
             </a>
