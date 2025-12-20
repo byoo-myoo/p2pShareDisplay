@@ -4,7 +4,7 @@ Generated from: \p2pShareDisplay\node_modules
 
 <a id="pkg-zod-validation-error-4-0-2"></a>
 ## zod-validation-error@4.0.2
-- Source: git://github.com/causaly/zod-validation-error.git
+- Source: https://github.com/causaly/zod-validation-error.git
 - License: MIT
 - LICENSE
 
@@ -54,7 +54,7 @@ SOFTWARE.
 
 <a id="pkg-yocto-queue-0-1-0"></a>
 ## yocto-queue@0.1.0
-- Source: sindresorhus/yocto-queue
+- Source: https://github.com/sindresorhus/yocto-queue
 - License: MIT
 - license
 
@@ -153,7 +153,7 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <a id="pkg-y18n-5-0-8"></a>
 ## y18n@5.0.8
-- Source: yargs/y18n
+- Source: https://github.com/yargs/y18n
 - License: ISC
 - LICENSE
 
@@ -206,7 +206,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-wrap-ansi-7-0-0"></a>
 ## wrap-ansi@7.0.0
-- Source: chalk/wrap-ansi
+- Source: https://github.com/chalk/wrap-ansi
 - License: MIT
 - license
 
@@ -225,7 +225,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-word-wrap-1-2-5"></a>
 ## word-wrap@1.2.5
-- Source: jonschlinkert/word-wrap
+- Source: https://github.com/jonschlinkert/word-wrap
 - License: MIT
 - LICENSE
 
@@ -256,7 +256,7 @@ THE SOFTWARE.
 
 <a id="pkg-which-2-0-2"></a>
 ## which@2.0.2
-- Source: git://github.com/isaacs/node-which.git
+- Source: https://github.com/npm/node-which
 - License: ISC
 - LICENSE
 
@@ -2539,7 +2539,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-utils-merge-1-0-1"></a>
 ## utils-merge@1.0.1
-- Source: git://github.com/jaredhanson/utils-merge.git
+- Source: https://github.com/jaredhanson/utils-merge
 - License: MIT
 - LICENSE
 
@@ -2590,7 +2590,7 @@ The views and conclusions contained in the software and documentation are those 
 
 <a id="pkg-update-browserslist-db-1-1-4"></a>
 ## update-browserslist-db@1.1.4
-- Source: browserslist/update-db
+- Source: https://github.com/browserslist/update-db
 - License: MIT
 - LICENSE
 
@@ -2620,7 +2620,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-unpipe-1-0-0"></a>
 ## unpipe@1.0.0
-- Source: stream-utils/unpipe
+- Source: https://github.com/stream-utils/unpipe
 - License: MIT
 - LICENSE
 
@@ -2686,6 +2686,7 @@ SOFTWARE.
 - Source: https://github.com/microsoft/TypeScript.git
 - License: Apache-2.0
 - LICENSE.txt
+- ThirdPartyNoticeText.txt
 
 ### LICENSE.txt
 ```text
@@ -2746,9 +2747,206 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 END OF TERMS AND CONDITIONS
 ```
 
+### ThirdPartyNoticeText.txt
+```text
+/*!----------------- TypeScript ThirdPartyNotices -------------------------------------------------------
+
+The TypeScript software incorporates third party material from the projects listed below. The original copyright notice and the license under which Microsoft received such third party material are set forth below. Microsoft reserves all other rights not expressly granted, whether by implication, estoppel or otherwise.
+
+---------------------------------------------
+Third Party Code Components
+--------------------------------------------
+
+------------------- DefinitelyTyped --------------------
+This file is based on or incorporates material from the projects listed below (collectively "Third Party Code"). Microsoft is not the original author of the Third Party Code. The original copyright notice and the license, under which Microsoft received such Third Party Code, are set forth below. Such licenses and notices are provided for informational purposes only. Microsoft, not the third party, licenses the Third Party Code to you under the terms set forth in the EULA for the Microsoft Product. Microsoft reserves all other rights not expressly granted under this agreement, whether by implication, estoppel or otherwise.
+DefinitelyTyped
+This project is licensed under the MIT license. Copyrights are respective of each contributor listed at the beginning of each definition file. Provided for Informational Purposes Only
+
+MIT License
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ""Software""), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+--------------------------------------------------------------------------------------
+
+------------------- Unicode --------------------
+UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
+
+Unicode Data Files include all data files under the directories
+http://www.unicode.org/Public/, http://www.unicode.org/reports/,
+http://www.unicode.org/cldr/data/, http://source.icu-project.org/repos/icu/, and
+http://www.unicode.org/utility/trac/browser/.
+
+Unicode Data Files do not include PDF online code charts under the
+directory http://www.unicode.org/Public/.
+
+Software includes any source code published in the Unicode Standard
+or under the directories
+http://www.unicode.org/Public/, http://www.unicode.org/reports/,
+http://www.unicode.org/cldr/data/, http://source.icu-project.org/repos/icu/, and
+http://www.unicode.org/utility/trac/browser/.
+
+NOTICE TO USER: Carefully read the following legal agreement.
+BY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING UNICODE INC.'S
+DATA FILES ("DATA FILES"), AND/OR SOFTWARE ("SOFTWARE"),
+YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+TERMS AND CONDITIONS OF THIS AGREEMENT.
+IF YOU DO NOT AGREE, DO NOT DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE
+THE DATA FILES OR SOFTWARE.
+
+COPYRIGHT AND PERMISSION NOTICE
+
+Copyright (c) 1991-2017 Unicode, Inc. All rights reserved.
+Distributed under the Terms of Use in http://www.unicode.org/copyright.html.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Unicode data files and any associated documentation
+(the "Data Files") or Unicode software and any associated documentation
+(the "Software") to deal in the Data Files or Software
+without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, and/or sell copies of
+the Data Files or Software, and to permit persons to whom the Data Files
+or Software are furnished to do so, provided that either
+(a) this copyright and permission notice appear with all copies
+of the Data Files or Software, or
+(b) this copyright and permission notice appear in associated
+Documentation.
+
+THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder
+shall not be used in advertising or otherwise to promote the sale,
+use or other dealings in these Data Files or Software without prior
+written authorization of the copyright holder.
+-------------------------------------------------------------------------------------
+
+-------------------Document Object Model-----------------------------
+DOM 
+
+W3C License
+This work is being provided by the copyright holders under the following license.
+By obtaining and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.
+Permission to copy, modify, and distribute this work, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following 
+on ALL copies of the work or portions thereof, including modifications:
+* The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.
+* Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, the W3C Software and Document Short Notice should be included.
+* Notice of any changes or modifications, through a copyright statement on the new code or document such as "This software or document includes material copied from or derived 
+from [title and URI of the W3C document]. Copyright © [YEAR] W3C® (MIT, ERCIM, Keio, Beihang)." 
+Disclaimers
+THIS WORK IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR 
+FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the work without specific, written prior permission. 
+Title to copyright in this work will at all times remain with copyright holders.
+
+---------
+
+DOM
+Copyright © 2018 WHATWG (Apple, Google, Mozilla, Microsoft). This work is licensed under a Creative Commons Attribution 4.0 International License: Attribution 4.0 International 
+======================================================================= 
+Creative Commons Corporation ("Creative Commons") is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an "as-is" basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible. Using Creative Commons Public Licenses Creative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses. Considerations for licensors: Our public licenses are intended for use by those authorized to give the public permission to use material in ways otherwise restricted by copyright and certain other rights. Our licenses are irrevocable. Licensors should read and understand the terms and conditions of the license they choose before applying it. Licensors should also secure all rights necessary before applying our licenses so that the public can reuse the material as expected. Licensors should clearly mark any material not subject to the license. This includes other CC- licensed material, or material used under an exception or limitation to copyright. More considerations for licensors:
+
+wiki.creativecommons.org/Considerations_for_licensors Considerations for the public: By using one of our public licenses, a licensor grants the public permission to use the licensed material under specified terms and conditions. If the licensor's permission is not necessary for any reason--for example, because of any applicable exception or limitation to copyright--then that use is not regulated by the license. Our licenses grant only permissions under copyright and certain other rights that a licensor has authority to grant. Use of the licensed material may still be restricted for other reasons, including because others have copyright or other rights in the material. A licensor may make special requests, such as asking that all changes be marked or described. Although not required by our licenses, you are encouraged to respect those requests where reasonable. More_considerations for the public: wiki.creativecommons.org/Considerations_for_licensees ======================================================================= 
+Creative Commons Attribution 4.0 International Public License By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions. Section 1 -- Definitions. a. Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image. b. Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License. c. Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights. d. Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements. e. Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material. f. Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License. g. Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license. h. Licensor means the individual(s) or entity(ies) granting rights under this Public License. i. Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them. j. Sui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world. k. You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning. Section 2 -- Scope. a. License grant. 1. Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to: a. reproduce and Share the Licensed Material, in whole or in part; and b. produce, reproduce, and Share Adapted Material. 2. Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions. 3. Term. The term of this Public License is specified in Section 6(a). 4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a) (4) never produces Adapted Material. 5. Downstream recipients. a. Offer from the Licensor -- Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License. b. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material. 6. No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i). b. Other rights. 1. Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise. 2. Patent and trademark rights are not licensed under this Public License. 3. To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties. Section 3 -- License Conditions. Your exercise of the Licensed Rights is expressly made subject to the following conditions. a. Attribution. 1. If You Share the Licensed Material (including in modified form), You must: a. retain the following if it is supplied by the Licensor with the Licensed Material: i. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated); ii. a copyright notice; iii. a notice that refers to this Public License; iv. a notice that refers to the disclaimer of warranties; v. a URI or hyperlink to the Licensed Material to the extent reasonably practicable; b. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and c. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License. 2. You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information. 3. If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable. 4. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License. Section 4 -- Sui Generis Database Rights. Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material: a. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database; b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database. For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights. Section 5 -- Disclaimer of Warranties and Limitation of Liability. a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU. b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU. c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability. Section 6 -- Term and Termination. a. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically. b. Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates: 1. automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or 2. upon express reinstatement by the Licensor. For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License. c. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License. d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License. Section 7 -- Other Terms and Conditions. a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed. b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License. Section 8 -- Interpretation. a. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License. b. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions. c. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor. d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority. ======================================================================= Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the "Licensor." Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark "Creative Commons" or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses. Creative Commons may be contacted at creativecommons.org.
+
+--------------------------------------------------------------------------------
+
+----------------------Web Background Synchronization------------------------------
+
+Web Background Synchronization Specification
+Portions of spec © by W3C
+
+W3C Community Final Specification Agreement 
+To secure commitments from participants for the full text of a Community or Business Group Report, the group may call for voluntary commitments to the following terms; a "summary" is 
+available. See also the related "W3C Community Contributor License Agreement".
+1. The Purpose of this Agreement.
+This Agreement sets forth the terms under which I make certain copyright and patent rights available to you for your implementation of the Specification. 
+Any other capitalized terms not specifically defined herein have the same meaning as those terms have in the "W3C Patent Policy", and if not defined there, in the "W3C Process Document".
+2. Copyrights. 
+2.1. Copyright Grant. I grant to you a perpetual (for the duration of the applicable copyright), worldwide, non-exclusive, no-charge, royalty-free, copyright license, without any obligation for accounting to me, to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, distribute, and implement the Specification to the full extent of my copyright interest in the Specification. 
+2.2. Attribution. As a condition of the copyright grant, you must include an attribution to the Specification in any derivative work you make based on the Specification. That attribution must include, at minimum, the Specification name and version number.
+3. Patents. 
+3.1. Patent Licensing Commitment. I agree to license my Essential Claims under the W3C Community RF Licensing Requirements. This requirement includes Essential Claims that I own and any that I have the right to license without obligation of payment or other consideration to an unrelated third party. W3C Community RF Licensing Requirements obligations made concerning the Specification and described in this policy are binding on me for the life of the patents in question and encumber the patents containing Essential Claims, regardless of changes in participation status or W3C Membership. I also agree to license my Essential Claims under the W3C Community RF Licensing Requirements in derivative works of the Specification so long as all normative portions of the Specification are maintained and that this licensing commitment does not extend to any portion of the derivative work that was not included in the Specification.
+3.2. Optional, Additional Patent Grant. In addition to the provisions of Section 3.1, I may also, at my option, make certain intellectual property rights infringed by implementations of the Specification, including Essential Claims, available by providing those terms via the W3C Web site.
+4. No Other Rights. Except as specifically set forth in this Agreement, no other express or implied patent, trademark, copyright, or other property rights are granted under this Agreement, including by implication, waiver, or estoppel.
+5. Antitrust Compliance. I acknowledge that I may compete with other participants, that I am under no obligation to implement the Specification, that each participant is free to develop competing technologies and standards, and that each party is free to license its patent rights to third parties, including for the purpose of enabling competing technologies and standards.
+6. Non-Circumvention. I agree that I will not intentionally take or willfully assist any third party to take any action for the purpose of circumventing my obligations under this Agreement.
+7. Transition to W3C Recommendation Track. The Specification developed by the Project may transition to the W3C Recommendation Track. The W3C Team is responsible for notifying me that a Corresponding Working Group has been chartered. I have no obligation to join the Corresponding Working Group. If the Specification developed by the Project transitions to the W3C Recommendation Track, the following terms apply: 
+7.1. If I join the Corresponding Working Group. If I join the Corresponding Working Group, I will be subject to all W3C rules, obligations, licensing commitments, and policies that govern that Corresponding Working Group.
+7.2. If I Do Not Join the Corresponding Working Group. 
+7.2.1. Licensing Obligations to Resulting Specification. If I do not join the Corresponding Working Group, I agree to offer patent licenses according to the W3C Royalty-Free licensing requirements described in Section 5 of the W3C Patent Policy for the portions of the Specification included in the resulting Recommendation. This licensing commitment does not extend to any portion of an implementation of the Recommendation that was not included in the Specification. This licensing commitment may not be revoked but may be modified through the exclusion process defined in Section 4 of the W3C Patent Policy. I am not required to join the Corresponding Working Group to exclude patents from the W3C Royalty-Free licensing commitment, but must otherwise follow the normal exclusion procedures defined by the W3C Patent Policy. The W3C Team will notify me of any Call for Exclusion in the Corresponding Working Group as set forth in Section 4.5 of the W3C Patent Policy.
+7.2.2. No Disclosure Obligation. If I do not join the Corresponding Working Group, I have no patent disclosure obligations outside of those set forth in Section 6 of the W3C Patent Policy.
+8. Conflict of Interest. I will disclose significant relationships when those relationships might reasonably be perceived as creating a conflict of interest with my role. I will notify W3C of any change in my affiliation using W3C-provided mechanisms.
+9. Representations, Warranties and Disclaimers. I represent and warrant that I am legally entitled to grant the rights and promises set forth in this Agreement. IN ALL OTHER RESPECTS THE SPECIFICATION IS PROVIDED “AS IS.” The entire risk as to implementing or otherwise using the Specification is assumed by the implementer and user. Except as stated herein, I expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the Specification. IN NO EVENT WILL ANY PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THIS AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. All of my obligations under Section 3 regarding the transfer, successors in interest, or assignment of Granted Claims will be satisfied if I notify the transferee or assignee of any patent that I know contains Granted Claims of the obligations under Section 3. Nothing in this Agreement requires me to undertake a patent search.
+10. Definitions. 
+10.1. Agreement. “Agreement” means this W3C Community Final Specification Agreement.
+10.2. Corresponding Working Group. “Corresponding Working Group” is a W3C Working Group that is chartered to develop a Recommendation, as defined in the W3C Process Document, that takes the Specification as an input.
+10.3. Essential Claims. “Essential Claims” shall mean all claims in any patent or patent application in any jurisdiction in the world that would necessarily be infringed by implementation of the Specification. A claim is necessarily infringed hereunder only when it is not possible to avoid infringing it because there is no non-infringing alternative for implementing the normative portions of the Specification. Existence of a non-infringing alternative shall be judged based on the state of the art at the time of the publication of the Specification. The following are expressly excluded from and shall not be deemed to constitute Essential Claims: 
+10.3.1. any claims other than as set forth above even if contained in the same patent as Essential Claims; and
+10.3.2. claims which would be infringed only by: 
+portions of an implementation that are not specified in the normative portions of the Specification, or
+enabling technologies that may be necessary to make or use any product or portion thereof that complies with the Specification and are not themselves expressly set forth in the Specification (e.g., semiconductor manufacturing technology, compiler technology, object-oriented technology, basic operating system technology, and the like); or
+the implementation of technology developed elsewhere and merely incorporated by reference in the body of the Specification.
+10.3.3. design patents and design registrations.
+For purposes of this definition, the normative portions of the Specification shall be deemed to include only architectural and interoperability requirements. Optional features in the RFC 2119 sense are considered normative unless they are specifically identified as informative. Implementation examples or any other material that merely illustrate the requirements of the Specification are informative, rather than normative.
+10.4. I, Me, or My. “I,” “me,” or “my” refers to the signatory.
+10.5 Project. “Project” means the W3C Community Group or Business Group for which I executed this Agreement.
+10.6. Specification. “Specification” means the Specification identified by the Project as the target of this agreement in a call for Final Specification Commitments. W3C shall provide the authoritative mechanisms for the identification of this Specification.
+10.7. W3C Community RF Licensing Requirements. “W3C Community RF Licensing Requirements” license shall mean a non-assignable, non-sublicensable license to make, have made, use, sell, have sold, offer to sell, import, and distribute and dispose of implementations of the Specification that: 
+10.7.1. shall be available to all, worldwide, whether or not they are W3C Members;
+10.7.2. shall extend to all Essential Claims owned or controlled by me;
+10.7.3. may be limited to implementations of the Specification, and to what is required by the Specification;
+10.7.4. may be conditioned on a grant of a reciprocal RF license (as defined in this policy) to all Essential Claims owned or controlled by the licensee. A reciprocal license may be required to be available to all, and a reciprocal license may itself be conditioned on a further reciprocal license from all.
+10.7.5. may not be conditioned on payment of royalties, fees or other consideration;
+10.7.6. may be suspended with respect to any licensee when licensor issued by licensee for infringement of claims essential to implement the Specification or any W3C Recommendation;
+10.7.7. may not impose any further conditions or restrictions on the use of any technology, intellectual property rights, or other restrictions on behavior of the licensee, but may include reasonable, customary terms relating to operation or maintenance of the license relationship such as the following: choice of law and dispute resolution;
+10.7.8. shall not be considered accepted by an implementer who manifests an intent not to accept the terms of the W3C Community RF Licensing Requirements license as offered by the licensor.
+10.7.9. The RF license conforming to the requirements in this policy shall be made available by the licensor as long as the Specification is in effect. The term of such license shall be for the life of the patents in question.
+I am encouraged to provide a contact from which licensing information can be obtained and other relevant licensing information. Any such information will be made publicly available. 
+10.8. You or Your. “You,” “you,” or “your” means any person or entity who exercises copyright or patent rights granted under this Agreement, and any person that person or entity controls.
+
+-------------------------------------------------------------------------------------
+
+------------------- WebGL -----------------------------
+Copyright (c) 2018 The Khronos Group Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and/or associated documentation files (the
+"Materials"), to deal in the Materials without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Materials, and to
+permit persons to whom the Materials are furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Materials.
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.
+------------------------------------------------------
+
+------------- End of ThirdPartyNotices ------------------------------------------- */
+
+```
+
 <a id="pkg-type-is-1-6-18"></a>
 ## type-is@1.6.18
-- Source: jshttp/type-is
+- Source: https://github.com/jshttp/type-is
 - License: MIT
 - LICENSE
 
@@ -2932,7 +3130,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-string-width-4-2-3"></a>
 ## string-width@4.2.3
-- Source: sindresorhus/string-width
+- Source: https://github.com/sindresorhus/string-width
 - License: MIT
 - license
 
@@ -2951,7 +3149,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-statuses-2-0-2"></a>
 ## statuses@2.0.2
-- Source: jshttp/statuses
+- Source: https://github.com/jshttp/statuses
 - License: MIT
 - LICENSE
 
@@ -2984,7 +3182,7 @@ THE SOFTWARE.
 
 <a id="pkg-source-map-js-1-2-1"></a>
 ## source-map-js@1.2.1
-- Source: 7rulnik/source-map-js
+- Source: https://github.com/7rulnik/source-map-js
 - License: BSD-3-Clause
 - LICENSE
 
@@ -3146,7 +3344,7 @@ SOFTWARE.
 
 <a id="pkg-shebang-regex-3-0-0"></a>
 ## shebang-regex@3.0.0
-- Source: sindresorhus/shebang-regex
+- Source: https://github.com/sindresorhus/shebang-regex
 - License: MIT
 - license
 
@@ -3165,7 +3363,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-shebang-command-2-0-0"></a>
 ## shebang-command@2.0.0
-- Source: kevva/shebang-command
+- Source: https://github.com/kevva/shebang-command
 - License: MIT
 - license
 
@@ -3207,7 +3405,7 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <a id="pkg-set-cookie-parser-2-7-2"></a>
 ## set-cookie-parser@2.7.2
-- Source: nfriedly/set-cookie-parser
+- Source: https://github.com/nfriedly/set-cookie-parser
 - License: MIT
 - LICENSE
 
@@ -3238,7 +3436,7 @@ THE SOFTWARE.
 
 <a id="pkg-serve-static-1-16-2"></a>
 ## serve-static@1.16.2
-- Source: expressjs/serve-static
+- Source: https://github.com/expressjs/serve-static
 - License: MIT
 - LICENSE
 
@@ -3273,7 +3471,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-statuses-2-0-1"></a>
 ## statuses@2.0.1
-- Source: jshttp/statuses
+- Source: https://github.com/jshttp/statuses
 - License: MIT
 - LICENSE
 
@@ -3306,7 +3504,7 @@ THE SOFTWARE.
 
 <a id="pkg-send-0-19-0"></a>
 ## send@0.19.0
-- Source: pillarjs/send
+- Source: https://github.com/pillarjs/send
 - License: MIT
 - LICENSE
 
@@ -3339,7 +3537,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-encodeurl-1-0-2"></a>
 ## encodeurl@1.0.2
-- Source: pillarjs/encodeurl
+- Source: https://github.com/pillarjs/encodeurl
 - License: MIT
 - LICENSE
 
@@ -3371,7 +3569,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-http-errors-2-0-0"></a>
 ## http-errors@2.0.0
-- Source: jshttp/http-errors
+- Source: https://github.com/jshttp/http-errors
 - License: MIT
 - LICENSE
 
@@ -3404,7 +3602,7 @@ THE SOFTWARE.
 
 <a id="pkg-debug-2-6-9"></a>
 ## debug@2.6.9
-- Source: git://github.com/visionmedia/debug.git
+- Source: https://github.com/debug-js/debug
 - License: MIT
 - LICENSE
 
@@ -3432,7 +3630,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-ms-2-0-0"></a>
 ## ms@2.0.0
-- Source: zeit/ms
+- Source: https://github.com/vercel/ms
 - License: MIT
 - license.md
 
@@ -3463,7 +3661,7 @@ SOFTWARE.
 
 <a id="pkg-send-0-19-1"></a>
 ## send@0.19.1
-- Source: pillarjs/send
+- Source: https://github.com/pillarjs/send
 - License: MIT
 - LICENSE
 
@@ -3612,7 +3810,7 @@ SOFTWARE.
 
 <a id="pkg-safe-buffer-5-2-1"></a>
 ## safe-buffer@5.2.1
-- Source: git://github.com/feross/safe-buffer.git
+- Source: https://github.com/feross/safe-buffer.git
 - License: MIT
 - LICENSE
 
@@ -4332,7 +4530,7 @@ Repository: https://github.com/yargs/yargs-parser.git
 
 <a id="pkg-resolve-from-4-0-0"></a>
 ## resolve-from@4.0.0
-- Source: sindresorhus/resolve-from
+- Source: https://github.com/sindresorhus/resolve-from
 - License: MIT
 - license
 
@@ -4351,7 +4549,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-require-directory-2-1-1"></a>
 ## require-directory@2.1.1
-- Source: git://github.com/troygoode/node-require-directory.git
+- Source: https://github.com/troygoode/node-require-directory.git
 - License: MIT
 - LICENSE
 
@@ -4542,7 +4740,7 @@ SOFTWARE.
 
 <a id="pkg-raw-body-2-5-3"></a>
 ## raw-body@2.5.3
-- Source: stream-utils/raw-body
+- Source: https://github.com/stream-utils/raw-body
 - License: MIT
 - LICENSE
 
@@ -4574,7 +4772,7 @@ THE SOFTWARE.
 
 <a id="pkg-range-parser-1-2-1"></a>
 ## range-parser@1.2.1
-- Source: jshttp/range-parser
+- Source: https://github.com/jshttp/range-parser
 - License: MIT
 - LICENSE
 
@@ -4704,7 +4902,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-proxy-addr-2-0-7"></a>
 ## proxy-addr@2.0.7
-- Source: jshttp/proxy-addr
+- Source: https://github.com/jshttp/proxy-addr
 - License: MIT
 - LICENSE
 
@@ -4736,7 +4934,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-prelude-ls-1-2-1"></a>
 ## prelude-ls@1.2.1
-- Source: git://github.com/gkz/prelude-ls.git
+- Source: https://github.com/gkz/prelude-ls.git
 - License: MIT
 - LICENSE
 
@@ -4768,7 +4966,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-postcss-8-5-6"></a>
 ## postcss@8.5.6
-- Source: postcss/postcss
+- Source: https://github.com/postcss/postcss
 - License: MIT
 - LICENSE
 
@@ -5242,7 +5440,7 @@ available under the Apache 2.0 license (https://github.com/puppeteer/puppeteer/b
 
 <a id="pkg-picomatch-4-0-3"></a>
 ## picomatch@4.0.3
-- Source: micromatch/picomatch
+- Source: https://github.com/micromatch/picomatch
 - License: MIT
 - LICENSE
 
@@ -5273,7 +5471,7 @@ THE SOFTWARE.
 
 <a id="pkg-picocolors-1-1-1"></a>
 ## picocolors@1.1.1
-- Source: alexeyraspopov/picocolors
+- Source: https://github.com/alexeyraspopov/picocolors
 - License: ISC
 - LICENSE
 
@@ -5425,7 +5623,7 @@ THE SOFTWARE.
 
 <a id="pkg-path-key-3-1-1"></a>
 ## path-key@3.1.1
-- Source: sindresorhus/path-key
+- Source: https://github.com/sindresorhus/path-key
 - License: MIT
 - license
 
@@ -5444,7 +5642,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-path-exists-4-0-0"></a>
 ## path-exists@4.0.0
-- Source: sindresorhus/path-exists
+- Source: https://github.com/sindresorhus/path-exists
 - License: MIT
 - license
 
@@ -5463,7 +5661,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-parseurl-1-3-3"></a>
 ## parseurl@1.3.3
-- Source: pillarjs/parseurl
+- Source: https://github.com/pillarjs/parseurl
 - License: MIT
 - LICENSE
 
@@ -5497,7 +5695,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-parent-module-1-0-1"></a>
 ## parent-module@1.0.1
-- Source: sindresorhus/parent-module
+- Source: https://github.com/sindresorhus/parent-module
 - License: MIT
 - license
 
@@ -5516,7 +5714,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-p-locate-5-0-0"></a>
 ## p-locate@5.0.0
-- Source: sindresorhus/p-locate
+- Source: https://github.com/sindresorhus/p-locate
 - License: MIT
 - license
 
@@ -5535,7 +5733,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-p-limit-3-1-0"></a>
 ## p-limit@3.1.0
-- Source: sindresorhus/p-limit
+- Source: https://github.com/sindresorhus/p-limit
 - License: MIT
 - license
 
@@ -5554,7 +5752,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-optionator-0-9-4"></a>
 ## optionator@0.9.4
-- Source: git://github.com/gkz/optionator.git
+- Source: https://github.com/gkz/optionator.git
 - License: MIT
 - LICENSE
 
@@ -5586,7 +5784,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-on-finished-2-4-1"></a>
 ## on-finished@2.4.1
-- Source: jshttp/on-finished
+- Source: https://github.com/jshttp/on-finished
 - License: MIT
 - LICENSE
 
@@ -5619,7 +5817,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-object-inspect-1-13-4"></a>
 ## object-inspect@1.13.4
-- Source: git://github.com/inspect-js/object-inspect.git
+- Source: https://github.com/inspect-js/object-inspect.git
 - License: MIT
 - LICENSE
 
@@ -5650,7 +5848,7 @@ SOFTWARE.
 
 <a id="pkg-object-assign-4-1-1"></a>
 ## object-assign@4.1.1
-- Source: sindresorhus/object-assign
+- Source: https://github.com/sindresorhus/object-assign
 - License: MIT
 - license
 
@@ -5774,7 +5972,7 @@ SOFTWARE.
 
 <a id="pkg-negotiator-0-6-3"></a>
 ## negotiator@0.6.3
-- Source: jshttp/negotiator
+- Source: https://github.com/jshttp/negotiator
 - License: MIT
 - LICENSE
 
@@ -5808,15 +6006,38 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-natural-compare-1-4-0"></a>
 ## natural-compare@1.4.0
-- Source: git://github.com/litejs/natural-compare-lite.git
+- Source: https://github.com/litejs/natural-compare-lite.git
 - License: MIT
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+```test
+THE MIT LICENSE
+
+Copyright (c) Lauri Rooden <lauri@rooden.ee>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
 
 <a id="pkg-nanoid-3-3-11"></a>
 ## nanoid@3.3.11
-- Source: ai/nanoid
+- Source: https://github.com/ai/nanoid
 - License: MIT
 - LICENSE
 
@@ -5846,7 +6067,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-ms-2-1-3"></a>
 ## ms@2.1.3
-- Source: vercel/ms
+- Source: https://github.com/vercel/ms
 - License: MIT
 - license.md
 
@@ -5877,7 +6098,7 @@ SOFTWARE.
 
 <a id="pkg-minimatch-3-1-2"></a>
 ## minimatch@3.1.2
-- Source: git://github.com/isaacs/minimatch.git
+- Source: https://github.com/isaacs/minimatch.git
 - License: ISC
 - LICENSE
 
@@ -5902,7 +6123,7 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <a id="pkg-mime-types-2-1-35"></a>
 ## mime-types@2.1.35
-- Source: jshttp/mime-types
+- Source: https://github.com/jshttp/mime-types
 - License: MIT
 - LICENSE
 
@@ -5935,7 +6156,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-mime-db-1-52-0"></a>
 ## mime-db@1.52.0
-- Source: jshttp/mime-db
+- Source: https://github.com/jshttp/mime-db
 - License: MIT
 - LICENSE
 
@@ -5999,7 +6220,7 @@ THE SOFTWARE.
 
 <a id="pkg-methods-1-1-2"></a>
 ## methods@1.1.2
-- Source: jshttp/methods
+- Source: https://github.com/jshttp/methods
 - License: MIT
 - LICENSE
 
@@ -6032,7 +6253,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-merge-descriptors-1-0-3"></a>
 ## merge-descriptors@1.0.3
-- Source: sindresorhus/merge-descriptors
+- Source: https://github.com/sindresorhus/merge-descriptors
 - License: MIT
 - LICENSE
 
@@ -6065,7 +6286,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-media-typer-0-3-0"></a>
 ## media-typer@0.3.0
-- Source: jshttp/media-typer
+- Source: https://github.com/jshttp/media-typer
 - License: MIT
 - LICENSE
 
@@ -6177,7 +6398,7 @@ SOFTWARE.
 
 <a id="pkg-lru-cache-5-1-1"></a>
 ## lru-cache@5.1.1
-- Source: git://github.com/isaacs/node-lru-cache.git
+- Source: https://github.com/isaacs/node-lru-cache.git
 - License: ISC
 - LICENSE
 
@@ -6202,7 +6423,7 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <a id="pkg-lodash-merge-4-6-2"></a>
 ## lodash.merge@4.6.2
-- Source: lodash/lodash
+- Source: https://github.com/lodash/lodash
 - License: MIT
 - LICENSE
 
@@ -6278,7 +6499,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-levn-0-4-1"></a>
 ## levn@0.4.1
-- Source: git://github.com/gkz/levn.git
+- Source: https://github.com/gkz/levn.git
 - License: MIT
 - LICENSE
 
@@ -6312,9 +6533,33 @@ OTHER DEALINGS IN THE SOFTWARE.
 ## keyv@4.5.4
 - Source: git+https://github.com/jaredwray/keyv.git
 - License: MIT
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+```text
+MIT License
+
+Copyright (c) 2017-2021 Luke Childs
+Copyright (c) 2021-2026 Jared Wray
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 <a id="pkg-json5-2-2-3"></a>
 ## json5@2.2.3
@@ -6351,7 +6596,7 @@ SOFTWARE.
 
 <a id="pkg-json-stable-stringify-without-jsonify-1-0-1"></a>
 ## json-stable-stringify-without-jsonify@1.0.1
-- Source: git://github.com/samn/json-stable-stringify.git
+- Source: https://github.com/samn/json-stable-stringify.git
 - License: MIT
 - LICENSE
 
@@ -6410,7 +6655,7 @@ SOFTWARE.
 
 <a id="pkg-json-buffer-3-0-1"></a>
 ## json-buffer@3.0.1
-- Source: git://github.com/dominictarr/json-buffer.git
+- Source: https://github.com/dominictarr/json-buffer.git
 - License: MIT
 - LICENSE
 
@@ -6503,7 +6748,7 @@ THE SOFTWARE.
 
 <a id="pkg-js-tokens-4-0-0"></a>
 ## js-tokens@4.0.0
-- Source: lydell/js-tokens
+- Source: https://github.com/lydell/js-tokens
 - License: MIT
 - LICENSE
 
@@ -6559,7 +6804,7 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <a id="pkg-is-glob-4-0-3"></a>
 ## is-glob@4.0.3
-- Source: micromatch/is-glob
+- Source: https://github.com/micromatch/is-glob
 - License: MIT
 - LICENSE
 
@@ -6590,7 +6835,7 @@ THE SOFTWARE.
 
 <a id="pkg-is-fullwidth-code-point-3-0-0"></a>
 ## is-fullwidth-code-point@3.0.0
-- Source: sindresorhus/is-fullwidth-code-point
+- Source: https://github.com/sindresorhus/is-fullwidth-code-point
 - License: MIT
 - license
 
@@ -6609,7 +6854,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-is-extglob-2-1-1"></a>
 ## is-extglob@2.1.1
-- Source: jonschlinkert/is-extglob
+- Source: https://github.com/micromatch/is-extglob
 - License: MIT
 - LICENSE
 
@@ -6640,7 +6885,7 @@ THE SOFTWARE.
 
 <a id="pkg-ipaddr-js-1-9-1"></a>
 ## ipaddr.js@1.9.1
-- Source: git://github.com/whitequark/ipaddr.js
+- Source: https://github.com/whitequark/ipaddr.js
 - License: MIT
 - LICENSE
 
@@ -6669,7 +6914,7 @@ THE SOFTWARE.
 
 <a id="pkg-inherits-2-0-4"></a>
 ## inherits@2.0.4
-- Source: git://github.com/isaacs/inherits
+- Source: https://github.com/isaacs/inherits
 - License: ISC
 - LICENSE
 
@@ -6696,13 +6941,36 @@ PERFORMANCE OF THIS SOFTWARE.
 ## imurmurhash@0.1.4
 - Source: https://github.com/jensyt/imurmurhash-js
 - License: MIT
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+
+```text
+The MIT License (MIT)
+
+Copyright (c) 2013 Gary Court, Jens Taylor
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
 <a id="pkg-import-fresh-3-3-1"></a>
 ## import-fresh@3.3.1
-- Source: sindresorhus/import-fresh
+- Source: https://github.com/sindresorhus/import-fresh
 - License: MIT
 - license
 
@@ -6721,7 +6989,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-ignore-5-3-2"></a>
 ## ignore@5.3.2
-- Source: git@github.com:kaelzhang/node-ignore.git
+- Source: https://github.com/kaelzhang/node-ignore
 - License: MIT
 - LICENSE-MIT
 
@@ -6752,7 +7020,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-iconv-lite-0-4-24"></a>
 ## iconv-lite@0.4.24
-- Source: git://github.com/ashtuchkin/iconv-lite.git
+- Source: https://github.com/ashtuchkin/iconv-lite.git
 - License: MIT
 - LICENSE
 
@@ -6782,7 +7050,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-http-errors-2-0-1"></a>
 ## http-errors@2.0.1
-- Source: jshttp/http-errors
+- Source: https://github.com/jshttp/http-errors
 - License: MIT
 - LICENSE
 
@@ -6815,7 +7083,7 @@ THE SOFTWARE.
 
 <a id="pkg-hermes-parser-0-25-1"></a>
 ## hermes-parser@0.25.1
-- Source: git@github.com:facebook/hermes.git
+- Source: https://github.com/facebook/hermes
 - License: MIT
 - LICENSE
 
@@ -6846,7 +7114,7 @@ SOFTWARE.
 
 <a id="pkg-hermes-estree-0-25-1"></a>
 ## hermes-estree@0.25.1
-- Source: git@github.com:facebook/hermes.git
+- Source: https://github.com/facebook/hermes
 - License: MIT
 - LICENSE
 
@@ -6908,7 +7176,7 @@ SOFTWARE.
 
 <a id="pkg-has-symbols-1-1-0"></a>
 ## has-symbols@1.1.0
-- Source: git://github.com/inspect-js/has-symbols.git
+- Source: https://github.com/inspect-js/has-symbols.git
 - License: MIT
 - LICENSE
 
@@ -6939,7 +7207,7 @@ SOFTWARE.
 
 <a id="pkg-has-flag-4-0-0"></a>
 ## has-flag@4.0.0
-- Source: sindresorhus/has-flag
+- Source: https://github.com/sindresorhus/has-flag
 - License: MIT
 - license
 
@@ -6989,7 +7257,7 @@ SOFTWARE.
 
 <a id="pkg-globals-16-5-0"></a>
 ## globals@16.5.0
-- Source: sindresorhus/globals
+- Source: https://github.com/sindresorhus/globals
 - License: MIT
 - license
 
@@ -7008,7 +7276,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-glob-parent-6-0-2"></a>
 ## glob-parent@6.0.2
-- Source: gulpjs/glob-parent
+- Source: https://github.com/gulpjs/glob-parent
 - License: ISC
 - LICENSE
 
@@ -7157,7 +7425,7 @@ THE SOFTWARE.
 
 <a id="pkg-fresh-0-5-2"></a>
 ## fresh@0.5.2
-- Source: jshttp/fresh
+- Source: https://github.com/jshttp/fresh
 - License: MIT
 - LICENSE
 
@@ -7190,7 +7458,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-forwarded-0-2-0"></a>
 ## forwarded@0.2.0
-- Source: jshttp/forwarded
+- Source: https://github.com/jshttp/forwarded
 - License: MIT
 - LICENSE
 
@@ -7278,7 +7546,8 @@ PERFORMANCE OF THIS SOFTWARE.
 
 <a id="pkg-flat-cache-4-0-1"></a>
 ## flat-cache@4.0.1
-- Source: jaredwray/flat-cache
+- Source: https://www.npmjs.com/package/flat-cache
+https://github.com/jaredwray/cacheable
 - License: MIT
 - LICENSE
 
@@ -7309,7 +7578,7 @@ SOFTWARE.
 
 <a id="pkg-find-up-5-0-0"></a>
 ## find-up@5.0.0
-- Source: sindresorhus/find-up
+- Source: https://github.com/sindresorhus/find-up
 - License: MIT
 - license
 
@@ -7328,7 +7597,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-finalhandler-1-3-2"></a>
 ## finalhandler@1.3.2
-- Source: pillarjs/finalhandler
+- Source: https://github.com/pillarjs/finalhandler
 - License: MIT
 - LICENSE
 
@@ -7360,7 +7629,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-file-entry-cache-8-0-0"></a>
 ## file-entry-cache@8.0.0
-- Source: jaredwray/file-entry-cache
+- Source: https://github.com/jaredwray/cacheable
+https://www.npmjs.com/package/file-entry-cache
 - License: MIT
 - LICENSE
 
@@ -7473,7 +7743,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-fast-json-stable-stringify-2-1-0"></a>
 ## fast-json-stable-stringify@2.1.0
-- Source: git://github.com/epoberezkin/fast-json-stable-stringify.git
+- Source: https://github.com/epoberezkin/fast-json-stable-stringify.git
 - License: MIT
 - LICENSE
 
@@ -7535,7 +7805,7 @@ SOFTWARE.
 
 <a id="pkg-express-4-22-1"></a>
 ## express@4.22.1
-- Source: expressjs/express
+- Source: https://github.com/expressjs/express
 - License: MIT
 - LICENSE
 
@@ -7569,7 +7839,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-cookie-0-7-2"></a>
 ## cookie@0.7.2
-- Source: jshttp/cookie
+- Source: https://github.com/jshttp/cookie
 - License: MIT
 - LICENSE
 
@@ -7602,7 +7872,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-eventemitter3-4-0-7"></a>
 ## eventemitter3@4.0.7
-- Source: git://github.com/primus/eventemitter3.git
+- Source: https://github.com/primus/eventemitter3.git
 - License: MIT
 - LICENSE
 
@@ -7633,7 +7903,7 @@ SOFTWARE.
 
 <a id="pkg-etag-1-8-1"></a>
 ## etag@1.8.1
-- Source: jshttp/etag
+- Source: https://github.com/jshttp/etag
 - License: MIT
 - LICENSE
 
@@ -7725,9 +7995,37 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ## esrecurse@4.3.0
 - Source: https://github.com/estools/esrecurse.git
 - License: BSD-2-Clause
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE.md
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+
+```text
+### License
+
+Copyright (C) 2014 [Yusuke Suzuki](https://github.com/Constellation)
+ (twitter: [@Constellation](https://twitter.com/Constellation)) and other contributors.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+```
 
 <a id="pkg-esquery-1-6-0"></a>
 ## esquery@1.6.0
@@ -8043,7 +8341,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 <a id="pkg-eslint-plugin-react-refresh-0-4-24"></a>
 ## eslint-plugin-react-refresh@0.4.24
-- Source: github:ArnaudBarre/eslint-plugin-react-refresh
+- Source: https://github.com/ArnaudBarre/eslint-plugin-react-refresh
 - License: MIT
 - LICENSE
 
@@ -8105,7 +8403,7 @@ SOFTWARE.
 
 <a id="pkg-eslint-9-39-1"></a>
 ## eslint@9.39.1
-- Source: eslint/eslint
+- Source: https://github.com/eslint/eslint
 - License: MIT
 - LICENSE
 
@@ -8134,7 +8432,7 @@ THE SOFTWARE.
 
 <a id="pkg-escape-string-regexp-4-0-0"></a>
 ## escape-string-regexp@4.0.0
-- Source: sindresorhus/escape-string-regexp
+- Source: https://github.com/sindresorhus/escape-string-regexp
 - License: MIT
 - license
 
@@ -8153,7 +8451,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-escape-html-1-0-3"></a>
 ## escape-html@1.0.3
-- Source: component/escape-html
+- Source: https://github.com/component/escape-html
 - License: MIT
 - LICENSE
 
@@ -8187,7 +8485,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-escalade-3-2-0"></a>
 ## escalade@3.2.0
-- Source: lukeed/escalade
+- Source: https://github.com/lukeed/escalade
 - License: MIT
 - license
 
@@ -8330,7 +8628,7 @@ SOFTWARE.
 
 <a id="pkg-encodeurl-2-0-0"></a>
 ## encodeurl@2.0.0
-- Source: pillarjs/encodeurl
+- Source: https://github.com/pillarjs/encodeurl
 - License: MIT
 - LICENSE
 
@@ -8407,7 +8705,7 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 <a id="pkg-ee-first-1-1-1"></a>
 ## ee-first@1.1.1
-- Source: jonathanong/ee-first
+- Source: https://github.com/jonathanong/ee-first
 - License: MIT
 - LICENSE
 
@@ -8470,7 +8768,7 @@ SOFTWARE.
 
 <a id="pkg-destroy-1-2-0"></a>
 ## destroy@1.2.0
-- Source: stream-utils/destroy
+- Source: https://github.com/stream-utils/destroy
 - License: MIT
 - LICENSE
 
@@ -8503,7 +8801,7 @@ THE SOFTWARE.
 
 <a id="pkg-depd-2-0-0"></a>
 ## depd@2.0.0
-- Source: dougwilson/nodejs-depd
+- Source: https://github.com/dougwilson/nodejs-depd
 - License: MIT
 - LICENSE
 
@@ -8567,7 +8865,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-debug-4-4-3"></a>
 ## debug@4.4.3
-- Source: git://github.com/debug-js/debug.git
+- Source: https://github.com/debug-js/debug.git
 - License: MIT
 - LICENSE
 
@@ -8596,11 +8894,36 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-data-uri-to-buffer-4-0-1"></a>
 ## data-uri-to-buffer@4.0.1
-- Source: git://github.com/TooTallNate/node-data-uri-to-buffer.git
+- Source: https://github.com/TooTallNate/node-data-uri-to-buffer.git
+https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffer
 - License: MIT
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+```text
+(The MIT License)
+
+Copyright (c) 2014 Nathan Rajlich <nathan@tootallnate.net>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
 <a id="pkg-csstype-3-2-3"></a>
 ## csstype@3.2.3
@@ -8633,7 +8956,7 @@ SOFTWARE.
 
 <a id="pkg-cross-spawn-7-0-6"></a>
 ## cross-spawn@7.0.6
-- Source: git@github.com:moxystudio/node-cross-spawn.git
+- Source: https://github.com/moxystudio/node-cross-spawn
 - License: MIT
 - LICENSE
 
@@ -8664,7 +8987,7 @@ THE SOFTWARE.
 
 <a id="pkg-cors-2-8-5"></a>
 ## cors@2.8.5
-- Source: expressjs/cors
+- Source: https://github.com/expressjs/cors
 - License: MIT
 - LICENSE
 
@@ -8698,13 +9021,37 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## cookie-signature@1.0.7
 - Source: https://github.com/visionmedia/node-cookie-signature.git
 - License: MIT
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+```text
+(The MIT License)
+
+Copyright (c) 2012–2024 LearnBoost <tj@learnboost.com> and other contributors;
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
 <a id="pkg-cookie-1-1-1"></a>
 ## cookie@1.1.1
-- Source: jshttp/cookie
+- Source: https://github.com/jshttp/cookie
 - License: MIT
 - LICENSE
 
@@ -8737,7 +9084,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-convert-source-map-2-0-0"></a>
 ## convert-source-map@2.0.0
-- Source: git://github.com/thlorenz/convert-source-map.git
+- Source: https://github.com/thlorenz/convert-source-map.git
 - License: MIT
 - LICENSE
 
@@ -8770,7 +9117,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-content-type-1-0-5"></a>
 ## content-type@1.0.5
-- Source: jshttp/content-type
+- Source: https://github.com/jshttp/content-type
 - License: MIT
 - LICENSE
 
@@ -8802,7 +9149,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-content-disposition-0-5-4"></a>
 ## content-disposition@0.5.4
-- Source: jshttp/content-disposition
+- Source: https://github.com/jshttp/content-disposition
 - License: MIT
 - LICENSE
 
@@ -8862,7 +9209,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-color-name-1-1-4"></a>
 ## color-name@1.1.4
-- Source: git@github.com:colorjs/color-name.git
+- Source: https://github.com/colorjs/color-name
 - License: MIT
 - LICENSE
 
@@ -8880,7 +9227,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-color-convert-2-0-1"></a>
 ## color-convert@2.0.1
-- Source: Qix-/color-convert
+- Source: https://github.com/Qix-/color-convert
 - License: MIT
 - LICENSE
 
@@ -8910,7 +9257,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-cliui-8-0-1"></a>
 ## cliui@8.0.1
-- Source: yargs/cliui
+- Source: https://github.com/yargs/cliui
 - License: ISC
 - LICENSE.txt
 
@@ -8934,7 +9281,7 @@ ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <a id="pkg-chalk-4-1-2"></a>
 ## chalk@4.1.2
-- Source: chalk/chalk
+- Source: https://github.com/chalk/chalk
 - License: MIT
 - license
 
@@ -8953,7 +9300,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-caniuse-lite-1-0-30001757"></a>
 ## caniuse-lite@1.0.30001757
-- Source: browserslist/caniuse-lite
+- Source: https://github.com/browserslist/caniuse-lite
+- Author: Fyrd and contributors
 - License: CC-BY-4.0
 - LICENSE
 
@@ -9358,7 +9706,7 @@ Creative Commons may be contacted at creativecommons.org.
 
 <a id="pkg-callsites-3-1-0"></a>
 ## callsites@3.1.0
-- Source: sindresorhus/callsites
+- Source: https://github.com/sindresorhus/callsites
 - License: MIT
 - license
 
@@ -9439,7 +9787,7 @@ SOFTWARE.
 
 <a id="pkg-bytes-3-1-2"></a>
 ## bytes@3.1.2
-- Source: visionmedia/bytes.js
+- Source: https://github.com/visionmedia/bytes.js
 - License: MIT
 - LICENSE
 
@@ -9472,7 +9820,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-browserslist-4-28-0"></a>
 ## browserslist@4.28.0
-- Source: browserslist/browserslist
+- Source: https://github.com/browserslist/browserslist
 - License: MIT
 - LICENSE
 
@@ -9502,7 +9850,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-brace-expansion-1-1-12"></a>
 ## brace-expansion@1.1.12
-- Source: git://github.com/juliangruber/brace-expansion.git
+- Source: https://github.com/juliangruber/brace-expansion.git
 - License: MIT
 - LICENSE
 
@@ -9533,7 +9881,7 @@ SOFTWARE.
 
 <a id="pkg-body-parser-1-20-4"></a>
 ## body-parser@1.20.4
-- Source: expressjs/body-parser
+- Source: https://github.com/expressjs/body-parser
 - License: MIT
 - LICENSE
 
@@ -9777,7 +10125,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <a id="pkg-balanced-match-1-0-2"></a>
 ## balanced-match@1.0.2
-- Source: git://github.com/juliangruber/balanced-match.git
+- Source: https://github.com/juliangruber/balanced-match.git
 - License: MIT
 - LICENSE.md
 
@@ -9808,7 +10156,7 @@ SOFTWARE.
 
 <a id="pkg-array-flatten-1-1-1"></a>
 ## array-flatten@1.1.1
-- Source: git://github.com/blakeembrey/array-flatten.git
+- Source: https://github.com/blakeembrey/array-flatten.git
 - License: MIT
 - LICENSE
 
@@ -9839,7 +10187,7 @@ THE SOFTWARE.
 
 <a id="pkg-argparse-2-0-1"></a>
 ## argparse@2.0.1
-- Source: nodeca/argparse
+- Source: https://github.com/nodeca/argparse
 - License: Python-2.0
 - LICENSE
 
@@ -10103,7 +10451,7 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 <a id="pkg-ansi-styles-4-3-0"></a>
 ## ansi-styles@4.3.0
-- Source: chalk/ansi-styles
+- Source: https://github.com/chalk/ansi-styles
 - License: MIT
 - license
 
@@ -10122,7 +10470,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a id="pkg-ansi-regex-5-0-1"></a>
 ## ansi-regex@5.0.1
-- Source: chalk/ansi-regex
+- Source: https://github.com/chalk/ansi-regex
 - License: MIT
 - license
 
@@ -10232,7 +10580,7 @@ THE SOFTWARE.
 
 <a id="pkg-accepts-1-3-8"></a>
 ## accepts@1.3.8
-- Source: jshttp/accepts
+- Source: https://github.com/jshttp/accepts
 - License: MIT
 - LICENSE
 
@@ -10949,17 +11297,39 @@ SOFTWARE.
 ## @rollup/rollup-win32-x64-msvc@4.53.3
 - Source: git+https://github.com/rollup/rollup.git
 - License: MIT
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE-CORE.md
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+```test
+The MIT License (MIT)
+
+Copyright (c) 2017 [these people](https://github.com/rollup/rollup/graphs/contributors)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
 <a id="pkg-rollup-rollup-win32-x64-gnu-4-53-3"></a>
 ## @rollup/rollup-win32-x64-gnu@4.53.3
 - Source: git+https://github.com/rollup/rollup.git
 - License: MIT
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE-CORE.md
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+```test
+The MIT License (MIT)
+
+Copyright (c) 2017 [these people](https://github.com/rollup/rollup/graphs/contributors)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
 <a id="pkg-rolldown-pluginutils-1-0-0-beta-47"></a>
 ## @rolldown/pluginutils@1.0.0-beta.47
@@ -12317,7 +12687,7 @@ SOFTWARE.
 
 <a id="pkg-eslint-visitor-keys-3-4-3"></a>
 ## eslint-visitor-keys@3.4.3
-- Source: eslint/eslint-visitor-keys
+- Source: https://github.com/eslint/eslint-visitor-keys
 - License: Apache-2.0
 - LICENSE
 
@@ -12979,7 +13349,7 @@ THE SOFTWARE.
 
 <a id="pkg-eslint-eslintrc-3-3-3"></a>
 ## @eslint/eslintrc@3.3.3
-- Source: eslint/eslintrc
+- Source: https://github.com/eslint/eslintrc
 - License: MIT
 - LICENSE
 
@@ -13008,7 +13378,7 @@ THE SOFTWARE.
 
 <a id="pkg-globals-14-0-0"></a>
 ## globals@14.0.0
-- Source: sindresorhus/globals
+- Source: https://github.com/sindresorhus/globals
 - License: MIT
 - license
 
@@ -13662,9 +14032,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## @esbuild/win32-x64@0.25.12
 - Source: git+https://github.com/evanw/esbuild.git
 - License: MIT
-- (no LICENSE/NOTICE/COPYING files)
+- LICENSE.md
 
-_No LICENSE/NOTICE/COPYING file found in package directory._
+### LICENSE
+```text
+MIT License
+
+Copyright (c) 2020 Evan Wallace
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 <a id="pkg-babel-types-7-28-5"></a>
 ## @babel/types@7.28.5

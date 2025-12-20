@@ -179,8 +179,8 @@ Main file: THIRD-PARTY-LICENSE.md
 - Source: git+https://github.com/evanw/esbuild.git
 - License: MIT
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE.md
+- Status: found license file in repositories
 - Notes:
 
 ## @eslint-community/eslint-utils@4.9.0
@@ -230,7 +230,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## @eslint/eslintrc@3.3.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-eslint-eslintrc-3-3-3
-- Source: eslint/eslintrc
+- Source: https://github.com/eslint/eslintrc
 - License: MIT
 - Files:
   - LICENSE
@@ -387,8 +387,8 @@ Main file: THIRD-PARTY-LICENSE.md
 - Source: git+https://github.com/rollup/rollup.git
 - License: MIT
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE-CORE.md
+- Status: found license file in repositories
 - Notes:
 
 ## @rollup/rollup-win32-x64-msvc@4.53.3
@@ -396,8 +396,8 @@ Main file: THIRD-PARTY-LICENSE.md
 - Source: git+https://github.com/rollup/rollup.git
 - License: MIT
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE-CORE.md
+- Status: found license file in repositories
 - Notes:
 
 ## @types/babel__core@7.20.5
@@ -600,7 +600,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## accepts@1.3.8
 - Main: THIRD-PARTY-LICENSE.md#pkg-accepts-1-3-8
-- Source: jshttp/accepts
+- Source: https://github.com/jshttp/accepts
 - License: MIT
 - Files:
   - LICENSE
@@ -636,7 +636,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## ansi-regex@5.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-ansi-regex-5-0-1
-- Source: chalk/ansi-regex
+- Source: https://github.com/chalk/ansi-regex
 - License: MIT
 - Files:
   - license
@@ -645,7 +645,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## ansi-styles@4.3.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-ansi-styles-4-3-0
-- Source: chalk/ansi-styles
+- Source: https://github.com/chalk/ansi-styles
 - License: MIT
 - Files:
   - license
@@ -654,7 +654,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## argparse@2.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-argparse-2-0-1
-- Source: nodeca/argparse
+- Source: https://github.com/nodeca/argparse
 - License: Python-2.0
 - Files:
   - LICENSE
@@ -663,7 +663,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## array-flatten@1.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-array-flatten-1-1-1
-- Source: git://github.com/blakeembrey/array-flatten.git
+- Source: https://github.com/blakeembrey/array-flatten.git
 - License: MIT
 - Files:
   - LICENSE
@@ -672,7 +672,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## balanced-match@1.0.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-balanced-match-1-0-2
-- Source: git://github.com/juliangruber/balanced-match.git
+- Source: https://github.com/juliangruber/balanced-match.git
 - License: MIT
 - Files:
   - LICENSE.md
@@ -690,7 +690,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## body-parser@1.20.4
 - Main: THIRD-PARTY-LICENSE.md#pkg-body-parser-1-20-4
-- Source: expressjs/body-parser
+- Source: https://github.com/expressjs/body-parser
 - License: MIT
 - Files:
   - LICENSE
@@ -699,7 +699,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## brace-expansion@1.1.12
 - Main: THIRD-PARTY-LICENSE.md#pkg-brace-expansion-1-1-12
-- Source: git://github.com/juliangruber/brace-expansion.git
+- Source: https://github.com/juliangruber/brace-expansion.git
 - License: MIT
 - Files:
   - LICENSE
@@ -708,7 +708,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## browserslist@4.28.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-browserslist-4-28-0
-- Source: browserslist/browserslist
+- Source: https://github.com/browserslist/browserslist
 - License: MIT
 - Files:
   - LICENSE
@@ -717,7 +717,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## bytes@3.1.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-bytes-3-1-2
-- Source: visionmedia/bytes.js
+- Source: https://github.com/visionmedia/bytes.js
 - License: MIT
 - Files:
   - LICENSE
@@ -753,16 +753,17 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## caniuse-lite@1.0.30001757
 - Main: THIRD-PARTY-LICENSE.md#pkg-caniuse-lite-1-0-30001757
-- Source: browserslist/caniuse-lite
+- Source: https://github.com/browserslist/caniuse-lite
+- Author: Fyrd and contributors
 - License: CC-BY-4.0
 - Files:
   - LICENSE
 - Status: Check manually
-- Notes:
+- Notes: add write Author
 
 ## chalk@4.1.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-chalk-4-1-2
-- Source: chalk/chalk
+- Source: https://github.com/chalk/chalk
 - License: MIT
 - Files:
   - license
@@ -771,7 +772,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## cliui@8.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-cliui-8-0-1
-- Source: yargs/cliui
+- Source: https://github.com/yargs/cliui
 - License: ISC
 - Files:
   - LICENSE.txt
@@ -780,7 +781,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## color-convert@2.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-color-convert-2-0-1
-- Source: Qix-/color-convert
+- Source: https://github.com/Qix-/color-convert
 - License: MIT
 - Files:
   - LICENSE
@@ -789,7 +790,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## color-name@1.1.4
 - Main: THIRD-PARTY-LICENSE.md#pkg-color-name-1-1-4
-- Source: git@github.com:colorjs/color-name.git
+- Source: https://github.com/colorjs/color-name
 - License: MIT
 - Files:
   - LICENSE
@@ -803,11 +804,11 @@ Main file: THIRD-PARTY-LICENSE.md
 - Files:
   - LICENSE
 - Status: Check manually
-- Notes:
+- Notes: repo not found
 
 ## content-disposition@0.5.4
 - Main: THIRD-PARTY-LICENSE.md#pkg-content-disposition-0-5-4
-- Source: jshttp/content-disposition
+- Source: https://github.com/jshttp/content-disposition
 - License: MIT
 - Files:
   - LICENSE
@@ -816,7 +817,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## content-type@1.0.5
 - Main: THIRD-PARTY-LICENSE.md#pkg-content-type-1-0-5
-- Source: jshttp/content-type
+- Source: https://github.com/jshttp/content-type
 - License: MIT
 - Files:
   - LICENSE
@@ -825,7 +826,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## convert-source-map@2.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-convert-source-map-2-0-0
-- Source: git://github.com/thlorenz/convert-source-map.git
+- Source: https://github.com/thlorenz/convert-source-map.git
 - License: MIT
 - Files:
   - LICENSE
@@ -837,13 +838,13 @@ Main file: THIRD-PARTY-LICENSE.md
 - Source: https://github.com/visionmedia/node-cookie-signature.git
 - License: MIT
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE
+- Status: found license file in repositories
 - Notes:
 
 ## cookie@0.7.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-cookie-0-7-2
-- Source: jshttp/cookie
+- Source: https://github.com/jshttp/cookie
 - License: MIT
 - Files:
   - LICENSE
@@ -852,7 +853,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## cookie@1.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-cookie-1-1-1
-- Source: jshttp/cookie
+- Source: https://github.com/jshttp/cookie
 - License: MIT
 - Files:
   - LICENSE
@@ -861,7 +862,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## cors@2.8.5
 - Main: THIRD-PARTY-LICENSE.md#pkg-cors-2-8-5
-- Source: expressjs/cors
+- Source: https://github.com/expressjs/cors
 - License: MIT
 - Files:
   - LICENSE
@@ -870,7 +871,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## cross-spawn@7.0.6
 - Main: THIRD-PARTY-LICENSE.md#pkg-cross-spawn-7-0-6
-- Source: git@github.com:moxystudio/node-cross-spawn.git
+- Source: https://github.com/moxystudio/node-cross-spawn
 - License: MIT
 - Files:
   - LICENSE
@@ -888,16 +889,17 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## data-uri-to-buffer@4.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-data-uri-to-buffer-4-0-1
-- Source: git://github.com/TooTallNate/node-data-uri-to-buffer.git
+- Source: https://github.com/TooTallNate/node-data-uri-to-buffer.git
+https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffer
 - License: MIT
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE
+- Status: found license file in repositories
 - Notes:
 
 ## debug@2.6.9
 - Main: THIRD-PARTY-LICENSE.md#pkg-debug-2-6-9
-- Source: git://github.com/visionmedia/debug.git
+- Source: https://github.com/debug-js/debug
 - License: MIT
 - Files:
   - LICENSE
@@ -906,7 +908,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## debug@4.4.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-debug-4-4-3
-- Source: git://github.com/debug-js/debug.git
+- Source: https://github.com/debug-js/debug.git
 - License: MIT
 - Files:
   - LICENSE
@@ -924,7 +926,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## depd@2.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-depd-2-0-0
-- Source: dougwilson/nodejs-depd
+- Source: https://github.com/dougwilson/nodejs-depd
 - License: MIT
 - Files:
   - LICENSE
@@ -933,7 +935,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## destroy@1.2.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-destroy-1-2-0
-- Source: stream-utils/destroy
+- Source: https://github.com/stream-utils/destroy
 - License: MIT
 - Files:
   - LICENSE
@@ -951,7 +953,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## ee-first@1.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-ee-first-1-1-1
-- Source: jonathanong/ee-first
+- Source: https://github.com/jonathanong/ee-first
 - License: MIT
 - Files:
   - LICENSE
@@ -978,7 +980,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## encodeurl@1.0.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-encodeurl-1-0-2
-- Source: pillarjs/encodeurl
+- Source: https://github.com/pillarjs/encodeurl
 - License: MIT
 - Files:
   - LICENSE
@@ -987,7 +989,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## encodeurl@2.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-encodeurl-2-0-0
-- Source: pillarjs/encodeurl
+- Source: https://github.com/pillarjs/encodeurl
 - License: MIT
 - Files:
   - LICENSE
@@ -1032,7 +1034,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## escalade@3.2.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-escalade-3-2-0
-- Source: lukeed/escalade
+- Source: https://github.com/lukeed/escalade
 - License: MIT
 - Files:
   - license
@@ -1041,7 +1043,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## escape-html@1.0.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-escape-html-1-0-3
-- Source: component/escape-html
+- Source: https://github.com/component/escape-html
 - License: MIT
 - Files:
   - LICENSE
@@ -1050,7 +1052,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## escape-string-regexp@4.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-escape-string-regexp-4-0-0
-- Source: sindresorhus/escape-string-regexp
+- Source: https://github.com/sindresorhus/escape-string-regexp
 - License: MIT
 - Files:
   - license
@@ -1068,7 +1070,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## eslint-plugin-react-refresh@0.4.24
 - Main: THIRD-PARTY-LICENSE.md#pkg-eslint-plugin-react-refresh-0-4-24
-- Source: github:ArnaudBarre/eslint-plugin-react-refresh
+- Source: https://github.com/ArnaudBarre/eslint-plugin-react-refresh
 - License: MIT
 - Files:
   - LICENSE
@@ -1086,7 +1088,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## eslint-visitor-keys@3.4.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-eslint-visitor-keys-3-4-3
-- Source: eslint/eslint-visitor-keys
+- Source: https://github.com/eslint/eslint-visitor-keys
 - License: Apache-2.0
 - Files:
   - LICENSE
@@ -1104,7 +1106,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## eslint@9.39.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-eslint-9-39-1
-- Source: eslint/eslint
+- Source: https://github.com/eslint/eslint
 - License: MIT
 - Files:
   - LICENSE
@@ -1134,8 +1136,8 @@ Main file: THIRD-PARTY-LICENSE.md
 - Source: https://github.com/estools/esrecurse.git
 - License: BSD-2-Clause
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE.md
+- Status: found license file in repositories
 - Notes:
 
 ## estraverse@5.3.0
@@ -1158,7 +1160,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## etag@1.8.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-etag-1-8-1
-- Source: jshttp/etag
+- Source: https://github.com/jshttp/etag
 - License: MIT
 - Files:
   - LICENSE
@@ -1167,7 +1169,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## eventemitter3@4.0.7
 - Main: THIRD-PARTY-LICENSE.md#pkg-eventemitter3-4-0-7
-- Source: git://github.com/primus/eventemitter3.git
+- Source: https://github.com/primus/eventemitter3.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1176,7 +1178,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## express@4.22.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-express-4-22-1
-- Source: expressjs/express
+- Source: https://github.com/expressjs/express
 - License: MIT
 - Files:
   - LICENSE
@@ -1194,7 +1196,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## fast-json-stable-stringify@2.1.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-fast-json-stable-stringify-2-1-0
-- Source: git://github.com/epoberezkin/fast-json-stable-stringify.git
+- Source: https://github.com/epoberezkin/fast-json-stable-stringify.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1230,7 +1232,8 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## file-entry-cache@8.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-file-entry-cache-8-0-0
-- Source: jaredwray/file-entry-cache
+- Source: https://github.com/jaredwray/cacheable
+https://www.npmjs.com/package/file-entry-cache
 - License: MIT
 - Files:
   - LICENSE
@@ -1239,7 +1242,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## finalhandler@1.3.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-finalhandler-1-3-2
-- Source: pillarjs/finalhandler
+- Source: https://github.com/pillarjs/finalhandler
 - License: MIT
 - Files:
   - LICENSE
@@ -1248,7 +1251,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## find-up@5.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-find-up-5-0-0
-- Source: sindresorhus/find-up
+- Source: https://github.com/sindresorhus/find-up
 - License: MIT
 - Files:
   - license
@@ -1257,7 +1260,8 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## flat-cache@4.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-flat-cache-4-0-1
-- Source: jaredwray/flat-cache
+- Source: https://www.npmjs.com/package/flat-cache
+https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
@@ -1284,7 +1288,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## forwarded@0.2.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-forwarded-0-2-0
-- Source: jshttp/forwarded
+- Source: https://github.com/jshttp/forwarded
 - License: MIT
 - Files:
   - LICENSE
@@ -1293,7 +1297,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## fresh@0.5.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-fresh-0-5-2
-- Source: jshttp/fresh
+- Source: https://github.com/jshttp/fresh
 - License: MIT
 - Files:
   - LICENSE
@@ -1347,7 +1351,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## glob-parent@6.0.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-glob-parent-6-0-2
-- Source: gulpjs/glob-parent
+- Source: https://github.com/gulpjs/glob-parent
 - License: ISC
 - Files:
   - LICENSE
@@ -1356,7 +1360,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## globals@14.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-globals-14-0-0
-- Source: sindresorhus/globals
+- Source: https://github.com/sindresorhus/globals
 - License: MIT
 - Files:
   - license
@@ -1365,7 +1369,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## globals@16.5.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-globals-16-5-0
-- Source: sindresorhus/globals
+- Source: https://github.com/sindresorhus/globals
 - License: MIT
 - Files:
   - license
@@ -1383,7 +1387,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## has-flag@4.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-has-flag-4-0-0
-- Source: sindresorhus/has-flag
+- Source: https://github.com/sindresorhus/has-flag
 - License: MIT
 - Files:
   - license
@@ -1392,7 +1396,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## has-symbols@1.1.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-has-symbols-1-1-0
-- Source: git://github.com/inspect-js/has-symbols.git
+- Source: https://github.com/inspect-js/has-symbols.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1410,7 +1414,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## hermes-estree@0.25.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-hermes-estree-0-25-1
-- Source: git@github.com:facebook/hermes.git
+- Source: https://github.com/facebook/hermes
 - License: MIT
 - Files:
   - LICENSE
@@ -1419,7 +1423,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## hermes-parser@0.25.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-hermes-parser-0-25-1
-- Source: git@github.com:facebook/hermes.git
+- Source: https://github.com/facebook/hermes
 - License: MIT
 - Files:
   - LICENSE
@@ -1428,7 +1432,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## http-errors@2.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-http-errors-2-0-0
-- Source: jshttp/http-errors
+- Source: https://github.com/jshttp/http-errors
 - License: MIT
 - Files:
   - LICENSE
@@ -1437,7 +1441,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## http-errors@2.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-http-errors-2-0-1
-- Source: jshttp/http-errors
+- Source: https://github.com/jshttp/http-errors
 - License: MIT
 - Files:
   - LICENSE
@@ -1446,7 +1450,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## iconv-lite@0.4.24
 - Main: THIRD-PARTY-LICENSE.md#pkg-iconv-lite-0-4-24
-- Source: git://github.com/ashtuchkin/iconv-lite.git
+- Source: https://github.com/ashtuchkin/iconv-lite.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1455,7 +1459,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## ignore@5.3.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-ignore-5-3-2
-- Source: git@github.com:kaelzhang/node-ignore.git
+- Source: https://github.com/kaelzhang/node-ignore
 - License: MIT
 - Files:
   - LICENSE-MIT
@@ -1464,7 +1468,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## import-fresh@3.3.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-import-fresh-3-3-1
-- Source: sindresorhus/import-fresh
+- Source: https://github.com/sindresorhus/import-fresh
 - License: MIT
 - Files:
   - license
@@ -1476,13 +1480,13 @@ Main file: THIRD-PARTY-LICENSE.md
 - Source: https://github.com/jensyt/imurmurhash-js
 - License: MIT
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE
+- Status: found license file in repositories
 - Notes:
 
 ## inherits@2.0.4
 - Main: THIRD-PARTY-LICENSE.md#pkg-inherits-2-0-4
-- Source: git://github.com/isaacs/inherits
+- Source: https://github.com/isaacs/inherits
 - License: ISC
 - Files:
   - LICENSE
@@ -1491,7 +1495,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## ipaddr.js@1.9.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-ipaddr-js-1-9-1
-- Source: git://github.com/whitequark/ipaddr.js
+- Source: https://github.com/whitequark/ipaddr.js
 - License: MIT
 - Files:
   - LICENSE
@@ -1500,7 +1504,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## is-extglob@2.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-is-extglob-2-1-1
-- Source: jonschlinkert/is-extglob
+- Source: https://github.com/micromatch/is-extglob
 - License: MIT
 - Files:
   - LICENSE
@@ -1509,7 +1513,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## is-fullwidth-code-point@3.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-is-fullwidth-code-point-3-0-0
-- Source: sindresorhus/is-fullwidth-code-point
+- Source: https://github.com/sindresorhus/is-fullwidth-code-point
 - License: MIT
 - Files:
   - license
@@ -1518,7 +1522,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## is-glob@4.0.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-is-glob-4-0-3
-- Source: micromatch/is-glob
+- Source: https://github.com/micromatch/is-glob
 - License: MIT
 - Files:
   - LICENSE
@@ -1536,7 +1540,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## js-tokens@4.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-js-tokens-4-0-0
-- Source: lydell/js-tokens
+- Source: https://github.com/lydell/js-tokens
 - License: MIT
 - Files:
   - LICENSE
@@ -1563,7 +1567,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## json-buffer@3.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-json-buffer-3-0-1
-- Source: git://github.com/dominictarr/json-buffer.git
+- Source: https://github.com/dominictarr/json-buffer.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1581,7 +1585,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## json-stable-stringify-without-jsonify@1.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-json-stable-stringify-without-jsonify-1-0-1
-- Source: git://github.com/samn/json-stable-stringify.git
+- Source: https://github.com/samn/json-stable-stringify.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1602,13 +1606,13 @@ Main file: THIRD-PARTY-LICENSE.md
 - Source: git+https://github.com/jaredwray/keyv.git
 - License: MIT
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE
+- Status: found license file in repositories
 - Notes:
 
 ## levn@0.4.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-levn-0-4-1
-- Source: git://github.com/gkz/levn.git
+- Source: https://github.com/gkz/levn.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1626,7 +1630,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## lodash.merge@4.6.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-lodash-merge-4-6-2
-- Source: lodash/lodash
+- Source: https://github.com/lodash/lodash
 - License: MIT
 - Files:
   - LICENSE
@@ -1635,7 +1639,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## lru-cache@5.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-lru-cache-5-1-1
-- Source: git://github.com/isaacs/node-lru-cache.git
+- Source: https://github.com/isaacs/node-lru-cache.git
 - License: ISC
 - Files:
   - LICENSE
@@ -1662,7 +1666,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## media-typer@0.3.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-media-typer-0-3-0
-- Source: jshttp/media-typer
+- Source: https://github.com/jshttp/media-typer
 - License: MIT
 - Files:
   - LICENSE
@@ -1671,7 +1675,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## merge-descriptors@1.0.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-merge-descriptors-1-0-3
-- Source: sindresorhus/merge-descriptors
+- Source: https://github.com/sindresorhus/merge-descriptors
 - License: MIT
 - Files:
   - LICENSE
@@ -1680,7 +1684,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## methods@1.1.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-methods-1-1-2
-- Source: jshttp/methods
+- Source: https://github.com/jshttp/methods
 - License: MIT
 - Files:
   - LICENSE
@@ -1689,7 +1693,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## mime-db@1.52.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-mime-db-1-52-0
-- Source: jshttp/mime-db
+- Source: https://github.com/jshttp/mime-db
 - License: MIT
 - Files:
   - LICENSE
@@ -1698,7 +1702,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## mime-types@2.1.35
 - Main: THIRD-PARTY-LICENSE.md#pkg-mime-types-2-1-35
-- Source: jshttp/mime-types
+- Source: https://github.com/jshttp/mime-types
 - License: MIT
 - Files:
   - LICENSE
@@ -1716,7 +1720,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## minimatch@3.1.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-minimatch-3-1-2
-- Source: git://github.com/isaacs/minimatch.git
+- Source: https://github.com/isaacs/minimatch.git
 - License: ISC
 - Files:
   - LICENSE
@@ -1725,7 +1729,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## ms@2.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-ms-2-0-0
-- Source: zeit/ms
+- Source: https://github.com/vercel/ms
 - License: MIT
 - Files:
   - license.md
@@ -1734,7 +1738,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## ms@2.1.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-ms-2-1-3
-- Source: vercel/ms
+- Source: https://github.com/vercel/ms
 - License: MIT
 - Files:
   - license.md
@@ -1743,7 +1747,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## nanoid@3.3.11
 - Main: THIRD-PARTY-LICENSE.md#pkg-nanoid-3-3-11
-- Source: ai/nanoid
+- Source: https://github.com/ai/nanoid
 - License: MIT
 - Files:
   - LICENSE
@@ -1752,16 +1756,16 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## natural-compare@1.4.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-natural-compare-1-4-0
-- Source: git://github.com/litejs/natural-compare-lite.git
+- Source: https://github.com/litejs/natural-compare-lite.git
 - License: MIT
 - Files:
-  - (none)
-- Status: Missing LICENSE/NOTICE/COPYING files
+  - LICENSE
+- Status: found license file in repositories
 - Notes:
 
 ## negotiator@0.6.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-negotiator-0-6-3
-- Source: jshttp/negotiator
+- Source: https://github.com/jshttp/negotiator
 - License: MIT
 - Files:
   - LICENSE
@@ -1797,7 +1801,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## object-assign@4.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-object-assign-4-1-1
-- Source: sindresorhus/object-assign
+- Source: https://github.com/sindresorhus/object-assign
 - License: MIT
 - Files:
   - license
@@ -1806,7 +1810,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## object-inspect@1.13.4
 - Main: THIRD-PARTY-LICENSE.md#pkg-object-inspect-1-13-4
-- Source: git://github.com/inspect-js/object-inspect.git
+- Source: https://github.com/inspect-js/object-inspect.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1815,7 +1819,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## on-finished@2.4.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-on-finished-2-4-1
-- Source: jshttp/on-finished
+- Source: https://github.com/jshttp/on-finished
 - License: MIT
 - Files:
   - LICENSE
@@ -1824,7 +1828,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## optionator@0.9.4
 - Main: THIRD-PARTY-LICENSE.md#pkg-optionator-0-9-4
-- Source: git://github.com/gkz/optionator.git
+- Source: https://github.com/gkz/optionator.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1833,7 +1837,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## p-limit@3.1.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-p-limit-3-1-0
-- Source: sindresorhus/p-limit
+- Source: https://github.com/sindresorhus/p-limit
 - License: MIT
 - Files:
   - license
@@ -1842,7 +1846,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## p-locate@5.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-p-locate-5-0-0
-- Source: sindresorhus/p-locate
+- Source: https://github.com/sindresorhus/p-locate
 - License: MIT
 - Files:
   - license
@@ -1851,7 +1855,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## parent-module@1.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-parent-module-1-0-1
-- Source: sindresorhus/parent-module
+- Source: https://github.com/sindresorhus/parent-module
 - License: MIT
 - Files:
   - license
@@ -1860,7 +1864,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## parseurl@1.3.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-parseurl-1-3-3
-- Source: pillarjs/parseurl
+- Source: https://github.com/pillarjs/parseurl
 - License: MIT
 - Files:
   - LICENSE
@@ -1869,7 +1873,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## path-exists@4.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-path-exists-4-0-0
-- Source: sindresorhus/path-exists
+- Source: https://github.com/sindresorhus/path-exists
 - License: MIT
 - Files:
   - license
@@ -1878,7 +1882,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## path-key@3.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-path-key-3-1-1
-- Source: sindresorhus/path-key
+- Source: https://github.com/sindresorhus/path-key
 - License: MIT
 - Files:
   - license
@@ -1923,7 +1927,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## picocolors@1.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-picocolors-1-1-1
-- Source: alexeyraspopov/picocolors
+- Source: https://github.com/alexeyraspopov/picocolors
 - License: ISC
 - Files:
   - LICENSE
@@ -1932,7 +1936,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## picomatch@4.0.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-picomatch-4-0-3
-- Source: micromatch/picomatch
+- Source: https://github.com/micromatch/picomatch
 - License: MIT
 - Files:
   - LICENSE
@@ -1961,7 +1965,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## postcss@8.5.6
 - Main: THIRD-PARTY-LICENSE.md#pkg-postcss-8-5-6
-- Source: postcss/postcss
+- Source: https://github.com/postcss/postcss
 - License: MIT
 - Files:
   - LICENSE
@@ -1970,7 +1974,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## prelude-ls@1.2.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-prelude-ls-1-2-1
-- Source: git://github.com/gkz/prelude-ls.git
+- Source: https://github.com/gkz/prelude-ls.git
 - License: MIT
 - Files:
   - LICENSE
@@ -1979,7 +1983,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## proxy-addr@2.0.7
 - Main: THIRD-PARTY-LICENSE.md#pkg-proxy-addr-2-0-7
-- Source: jshttp/proxy-addr
+- Source: https://github.com/jshttp/proxy-addr
 - License: MIT
 - Files:
   - LICENSE
@@ -2015,7 +2019,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## range-parser@1.2.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-range-parser-1-2-1
-- Source: jshttp/range-parser
+- Source: https://github.com/jshttp/range-parser
 - License: MIT
 - Files:
   - LICENSE
@@ -2024,7 +2028,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## raw-body@2.5.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-raw-body-2-5-3
-- Source: stream-utils/raw-body
+- Source: https://github.com/stream-utils/raw-body
 - License: MIT
 - Files:
   - LICENSE
@@ -2078,7 +2082,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## require-directory@2.1.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-require-directory-2-1-1
-- Source: git://github.com/troygoode/node-require-directory.git
+- Source: https://github.com/troygoode/node-require-directory.git
 - License: MIT
 - Files:
   - LICENSE
@@ -2087,7 +2091,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## resolve-from@4.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-resolve-from-4-0-0
-- Source: sindresorhus/resolve-from
+- Source: https://github.com/sindresorhus/resolve-from
 - License: MIT
 - Files:
   - license
@@ -2105,7 +2109,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## safe-buffer@5.2.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-safe-buffer-5-2-1
-- Source: git://github.com/feross/safe-buffer.git
+- Source: https://github.com/feross/safe-buffer.git
 - License: MIT
 - Files:
   - LICENSE
@@ -2150,7 +2154,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## send@0.19.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-send-0-19-0
-- Source: pillarjs/send
+- Source: https://github.com/pillarjs/send
 - License: MIT
 - Files:
   - LICENSE
@@ -2159,7 +2163,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## send@0.19.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-send-0-19-1
-- Source: pillarjs/send
+- Source: https://github.com/pillarjs/send
 - License: MIT
 - Files:
   - LICENSE
@@ -2168,7 +2172,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## serve-static@1.16.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-serve-static-1-16-2
-- Source: expressjs/serve-static
+- Source: https://github.com/expressjs/serve-static
 - License: MIT
 - Files:
   - LICENSE
@@ -2177,7 +2181,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## set-cookie-parser@2.7.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-set-cookie-parser-2-7-2
-- Source: nfriedly/set-cookie-parser
+- Source: https://github.com/nfriedly/set-cookie-parser
 - License: MIT
 - Files:
   - LICENSE
@@ -2195,7 +2199,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## shebang-command@2.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-shebang-command-2-0-0
-- Source: kevva/shebang-command
+- Source: https://github.com/kevva/shebang-command
 - License: MIT
 - Files:
   - license
@@ -2204,7 +2208,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## shebang-regex@3.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-shebang-regex-3-0-0
-- Source: sindresorhus/shebang-regex
+- Source: https://github.com/sindresorhus/shebang-regex
 - License: MIT
 - Files:
   - license
@@ -2249,7 +2253,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## source-map-js@1.2.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-source-map-js-1-2-1
-- Source: 7rulnik/source-map-js
+- Source: https://github.com/7rulnik/source-map-js
 - License: BSD-3-Clause
 - Files:
   - LICENSE
@@ -2258,7 +2262,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## statuses@2.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-statuses-2-0-1
-- Source: jshttp/statuses
+- Source: https://github.com/jshttp/statuses
 - License: MIT
 - Files:
   - LICENSE
@@ -2267,7 +2271,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## statuses@2.0.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-statuses-2-0-2
-- Source: jshttp/statuses
+- Source: https://github.com/jshttp/statuses
 - License: MIT
 - Files:
   - LICENSE
@@ -2276,7 +2280,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## string-width@4.2.3
 - Main: THIRD-PARTY-LICENSE.md#pkg-string-width-4-2-3
-- Source: sindresorhus/string-width
+- Source: https://github.com/sindresorhus/string-width
 - License: MIT
 - Files:
   - license
@@ -2339,7 +2343,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## type-is@1.6.18
 - Main: THIRD-PARTY-LICENSE.md#pkg-type-is-1-6-18
-- Source: jshttp/type-is
+- Source: https://github.com/jshttp/type-is
 - License: MIT
 - Files:
   - LICENSE
@@ -2352,6 +2356,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE.txt
+  - ThirdPartyNoticeText.txt
 - Status: Check manually
 - Notes:
 
@@ -2366,7 +2371,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## unpipe@1.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-unpipe-1-0-0
-- Source: stream-utils/unpipe
+- Source: https://github.com/stream-utils/unpipe
 - License: MIT
 - Files:
   - LICENSE
@@ -2375,7 +2380,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## update-browserslist-db@1.1.4
 - Main: THIRD-PARTY-LICENSE.md#pkg-update-browserslist-db-1-1-4
-- Source: browserslist/update-db
+- Source: https://github.com/browserslist/update-db
 - License: MIT
 - Files:
   - LICENSE
@@ -2393,7 +2398,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## utils-merge@1.0.1
 - Main: THIRD-PARTY-LICENSE.md#pkg-utils-merge-1-0-1
-- Source: git://github.com/jaredhanson/utils-merge.git
+- Source: https://github.com/jaredhanson/utils-merge
 - License: MIT
 - Files:
   - LICENSE
@@ -2438,7 +2443,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## which@2.0.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-which-2-0-2
-- Source: git://github.com/isaacs/node-which.git
+- Source: https://github.com/npm/node-which
 - License: ISC
 - Files:
   - LICENSE
@@ -2447,7 +2452,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## word-wrap@1.2.5
 - Main: THIRD-PARTY-LICENSE.md#pkg-word-wrap-1-2-5
-- Source: jonschlinkert/word-wrap
+- Source: https://github.com/jonschlinkert/word-wrap
 - License: MIT
 - Files:
   - LICENSE
@@ -2456,7 +2461,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## wrap-ansi@7.0.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-wrap-ansi-7-0-0
-- Source: chalk/wrap-ansi
+- Source: https://github.com/chalk/wrap-ansi
 - License: MIT
 - Files:
   - license
@@ -2474,7 +2479,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## y18n@5.0.8
 - Main: THIRD-PARTY-LICENSE.md#pkg-y18n-5-0-8
-- Source: yargs/y18n
+- Source: https://github.com/yargs/y18n
 - License: ISC
 - Files:
   - LICENSE
@@ -2510,7 +2515,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## yocto-queue@0.1.0
 - Main: THIRD-PARTY-LICENSE.md#pkg-yocto-queue-0-1-0
-- Source: sindresorhus/yocto-queue
+- Source: https://github.com/sindresorhus/yocto-queue
 - License: MIT
 - Files:
   - license
@@ -2519,7 +2524,7 @@ Main file: THIRD-PARTY-LICENSE.md
 
 ## zod-validation-error@4.0.2
 - Main: THIRD-PARTY-LICENSE.md#pkg-zod-validation-error-4-0-2
-- Source: git://github.com/causaly/zod-validation-error.git
+- Source: https://github.com/causaly/zod-validation-error.git
 - License: MIT
 - Files:
   - LICENSE
