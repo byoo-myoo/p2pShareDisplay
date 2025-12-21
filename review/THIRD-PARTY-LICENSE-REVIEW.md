@@ -9,7 +9,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/compat-data@7.28.5
@@ -18,7 +18,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/core@7.28.5
@@ -27,7 +27,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/generator@7.28.5
@@ -36,7 +36,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helper-compilation-targets@7.27.2
@@ -45,7 +45,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helper-globals@7.28.0
@@ -54,7 +54,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helper-module-imports@7.27.1
@@ -63,7 +63,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helper-module-transforms@7.28.3
@@ -72,7 +72,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helper-plugin-utils@7.27.1
@@ -81,7 +81,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helper-string-parser@7.27.1
@@ -90,7 +90,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helper-validator-identifier@7.28.5
@@ -99,7 +99,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helper-validator-option@7.27.1
@@ -108,7 +108,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/helpers@7.28.4
@@ -117,7 +117,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/parser@7.28.5
@@ -126,7 +126,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/plugin-transform-react-jsx-self@7.27.1
@@ -135,7 +135,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/plugin-transform-react-jsx-source@7.27.1
@@ -144,7 +144,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/template@7.27.2
@@ -153,7 +153,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/traverse@7.28.5
@@ -162,7 +162,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @babel/types@7.28.5
@@ -171,7 +171,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @esbuild/win32-x64@0.25.12
@@ -189,7 +189,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @eslint-community/regexpp@4.12.2
@@ -198,7 +198,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @eslint/config-array@0.21.1
@@ -207,7 +207,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @eslint/config-helpers@0.4.2
@@ -216,7 +216,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @eslint/core@0.17.0
@@ -225,7 +225,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @eslint/eslintrc@3.3.3
@@ -234,7 +234,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @eslint/js@9.39.1
@@ -243,7 +243,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @eslint/object-schema@2.1.7
@@ -252,7 +252,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @eslint/plugin-kit@0.4.1
@@ -261,7 +261,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @humanfs/core@0.19.1
@@ -270,7 +270,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @humanfs/node@0.16.7
@@ -279,7 +279,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @humanwhocodes/module-importer@1.0.1
@@ -288,7 +288,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @humanwhocodes/retry@0.4.3
@@ -297,7 +297,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @jridgewell/gen-mapping@0.3.13
@@ -306,7 +306,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @jridgewell/remapping@2.3.5
@@ -315,7 +315,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @jridgewell/resolve-uri@3.1.2
@@ -324,7 +324,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @jridgewell/sourcemap-codec@1.5.5
@@ -333,7 +333,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @jridgewell/trace-mapping@0.3.31
@@ -342,7 +342,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @msgpack/msgpack@2.8.0
@@ -351,16 +351,16 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
-## @myooken/license-output@0.1.1
-- Main: THIRD-PARTY-LICENSE.md#pkg-myooken-license-output-0-1-1
+## @myooken/license-output@0.2.0
+- Main: THIRD-PARTY-LICENSE.md#pkg-myooken-license-output-0-2-0
 - Source: git+https://github.com/myooken/collect-node-modules-licenses.git
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @playwright/test@1.57.0
@@ -370,7 +370,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - Files:
   - LICENSE
   - NOTICE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @rolldown/pluginutils@1.0.0-beta.47
@@ -379,7 +379,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @rollup/rollup-win32-x64-gnu@4.53.3
@@ -387,6 +387,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - Source: git+https://github.com/rollup/rollup.git
 - License: MIT
 - Files:
+  - LICENSE.md
   - LICENSE-CORE.md
 - Status: found license file in repositories
 - Notes:
@@ -397,6 +398,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE-CORE.md
+  - LICENSE.md
 - Status: found license file in repositories
 - Notes:
 
@@ -406,7 +408,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/babel__generator@7.27.0
@@ -415,7 +417,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/babel__template@7.4.4
@@ -424,7 +426,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/babel__traverse@7.28.0
@@ -433,7 +435,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/body-parser@1.19.6
@@ -442,7 +444,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/connect@3.4.38
@@ -451,7 +453,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/estree@1.0.8
@@ -460,7 +462,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/express-serve-static-core@4.19.7
@@ -469,7 +471,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/express@4.17.25
@@ -478,7 +480,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/http-errors@2.0.5
@@ -487,7 +489,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/json-schema@7.0.15
@@ -496,7 +498,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/mime@1.3.5
@@ -505,7 +507,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/node@25.0.0
@@ -514,7 +516,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/qs@6.14.0
@@ -523,7 +525,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/range-parser@1.2.7
@@ -532,7 +534,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/react-dom@19.2.3
@@ -541,7 +543,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/react@19.2.7
@@ -550,7 +552,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/send@0.17.6
@@ -559,7 +561,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/send@1.2.1
@@ -568,7 +570,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/serve-static@1.15.10
@@ -577,7 +579,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @types/ws@8.18.1
@@ -586,7 +588,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## @vitejs/plugin-react@5.1.1
@@ -595,7 +597,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## accepts@1.3.8
@@ -604,7 +606,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## acorn-jsx@5.3.2
@@ -613,7 +615,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## acorn@8.15.0
@@ -622,7 +624,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ajv@6.12.6
@@ -631,7 +633,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ansi-regex@5.0.1
@@ -640,7 +642,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ansi-styles@4.3.0
@@ -649,7 +651,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## argparse@2.0.1
@@ -658,7 +660,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Python-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## array-flatten@1.1.1
@@ -667,7 +669,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## balanced-match@1.0.2
@@ -676,7 +678,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## baseline-browser-mapping@2.8.32
@@ -685,7 +687,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: Apache-2.0
 - Files:
   - LICENSE.txt
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## body-parser@1.20.4
@@ -694,7 +696,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## brace-expansion@1.1.12
@@ -703,7 +705,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## browserslist@4.28.0
@@ -712,7 +714,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## bytes@3.1.2
@@ -721,7 +723,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## call-bind-apply-helpers@1.0.2
@@ -730,7 +732,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## call-bound@1.0.4
@@ -739,7 +741,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## callsites@3.1.0
@@ -748,7 +750,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## caniuse-lite@1.0.30001757
@@ -758,7 +760,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: CC-BY-4.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes: add write Author
 
 ## chalk@4.1.2
@@ -767,7 +769,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## cliui@8.0.1
@@ -776,7 +778,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: ISC
 - Files:
   - LICENSE.txt
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## color-convert@2.0.1
@@ -785,7 +787,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## color-name@1.1.4
@@ -794,7 +796,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## concat-map@0.0.1
@@ -803,7 +805,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes: repo not found
 
 ## content-disposition@0.5.4
@@ -812,7 +814,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## content-type@1.0.5
@@ -821,7 +823,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## convert-source-map@2.0.0
@@ -830,7 +832,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## cookie-signature@1.0.7
@@ -848,7 +850,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## cookie@1.1.1
@@ -857,7 +859,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## cors@2.8.5
@@ -866,7 +868,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## cross-spawn@7.0.6
@@ -875,7 +877,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## csstype@3.2.3
@@ -884,7 +886,7 @@ Main file: THIRD-PARTY-LICENSE.md
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## data-uri-to-buffer@4.0.1
@@ -903,7 +905,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## debug@4.4.3
@@ -912,7 +914,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## deep-is@0.1.4
@@ -921,7 +923,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## depd@2.0.0
@@ -930,7 +932,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## destroy@1.2.0
@@ -939,7 +941,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## dunder-proto@1.0.1
@@ -948,7 +950,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ee-first@1.1.1
@@ -957,7 +959,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## electron-to-chromium@1.5.262
@@ -966,7 +968,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## emoji-regex@8.0.0
@@ -975,7 +977,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE-MIT.txt
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## encodeurl@1.0.2
@@ -984,7 +986,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## encodeurl@2.0.0
@@ -993,7 +995,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## es-define-property@1.0.1
@@ -1002,7 +1004,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## es-errors@1.3.0
@@ -1011,7 +1013,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## es-object-atoms@1.1.1
@@ -1020,7 +1022,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## esbuild@0.25.12
@@ -1029,7 +1031,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## escalade@3.2.0
@@ -1038,7 +1040,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## escape-html@1.0.3
@@ -1047,7 +1049,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## escape-string-regexp@4.0.0
@@ -1056,7 +1058,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## eslint-plugin-react-hooks@7.0.1
@@ -1065,7 +1067,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## eslint-plugin-react-refresh@0.4.24
@@ -1074,7 +1076,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## eslint-scope@8.4.0
@@ -1083,7 +1085,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: BSD-2-Clause
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## eslint-visitor-keys@3.4.3
@@ -1092,7 +1094,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## eslint-visitor-keys@4.2.1
@@ -1101,7 +1103,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: Apache-2.0
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## eslint@9.39.1
@@ -1110,7 +1112,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## espree@10.4.0
@@ -1119,7 +1121,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: BSD-2-Clause
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## esquery@1.6.0
@@ -1128,7 +1130,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: BSD-3-Clause
 - Files:
   - license.txt
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## esrecurse@4.3.0
@@ -1146,7 +1148,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: BSD-2-Clause
 - Files:
   - LICENSE.BSD
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## esutils@2.0.3
@@ -1155,7 +1157,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: BSD-2-Clause
 - Files:
   - LICENSE.BSD
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## etag@1.8.1
@@ -1164,7 +1166,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## eventemitter3@4.0.7
@@ -1173,7 +1175,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## express@4.22.1
@@ -1182,7 +1184,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## fast-deep-equal@3.1.3
@@ -1191,7 +1193,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## fast-json-stable-stringify@2.1.0
@@ -1200,7 +1202,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## fast-levenshtein@2.0.6
@@ -1209,7 +1211,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## fdir@6.5.0
@@ -1218,7 +1220,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## fetch-blob@3.2.0
@@ -1227,7 +1229,7 @@ https://github.com/TooTallNate/proxy-agents/tree/main/packages/data-uri-to-buffe
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## file-entry-cache@8.0.0
@@ -1237,7 +1239,7 @@ https://www.npmjs.com/package/file-entry-cache
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## finalhandler@1.3.2
@@ -1246,7 +1248,7 @@ https://www.npmjs.com/package/file-entry-cache
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## find-up@5.0.0
@@ -1255,7 +1257,7 @@ https://www.npmjs.com/package/file-entry-cache
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## flat-cache@4.0.1
@@ -1265,7 +1267,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## flatted@3.3.3
@@ -1274,7 +1276,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## formdata-polyfill@4.0.10
@@ -1283,7 +1285,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## forwarded@0.2.0
@@ -1292,7 +1294,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## fresh@0.5.2
@@ -1301,7 +1303,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## function-bind@1.1.2
@@ -1310,7 +1312,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## gensync@1.0.0-beta.2
@@ -1319,7 +1321,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## get-caller-file@2.0.5
@@ -1328,7 +1330,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## get-intrinsic@1.3.0
@@ -1337,7 +1339,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## get-proto@1.0.1
@@ -1346,7 +1348,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## glob-parent@6.0.2
@@ -1355,7 +1357,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## globals@14.0.0
@@ -1364,7 +1366,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## globals@16.5.0
@@ -1373,7 +1375,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## gopd@1.2.0
@@ -1382,7 +1384,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## has-flag@4.0.0
@@ -1391,7 +1393,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## has-symbols@1.1.0
@@ -1400,7 +1402,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## hasown@2.0.2
@@ -1409,7 +1411,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## hermes-estree@0.25.1
@@ -1418,7 +1420,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## hermes-parser@0.25.1
@@ -1427,7 +1429,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## http-errors@2.0.0
@@ -1436,7 +1438,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## http-errors@2.0.1
@@ -1445,7 +1447,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## iconv-lite@0.4.24
@@ -1454,7 +1456,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ignore@5.3.2
@@ -1463,7 +1465,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE-MIT
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## import-fresh@3.3.1
@@ -1472,7 +1474,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## imurmurhash@0.1.4
@@ -1490,7 +1492,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ipaddr.js@1.9.1
@@ -1499,7 +1501,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## is-extglob@2.1.1
@@ -1508,7 +1510,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## is-fullwidth-code-point@3.0.0
@@ -1517,7 +1519,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## is-glob@4.0.3
@@ -1526,7 +1528,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## isexe@2.0.0
@@ -1535,7 +1537,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## js-tokens@4.0.0
@@ -1544,7 +1546,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## js-yaml@4.1.1
@@ -1553,7 +1555,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## jsesc@3.1.0
@@ -1562,7 +1564,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE-MIT.txt
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## json-buffer@3.0.1
@@ -1571,7 +1573,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## json-schema-traverse@0.4.1
@@ -1580,7 +1582,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## json-stable-stringify-without-jsonify@1.0.1
@@ -1589,7 +1591,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## json5@2.2.3
@@ -1598,7 +1600,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## keyv@4.5.4
@@ -1616,7 +1618,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## locate-path@6.0.0
@@ -1625,7 +1627,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## lodash.merge@4.6.2
@@ -1634,7 +1636,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## lru-cache@5.1.1
@@ -1643,7 +1645,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## lucide-react@0.555.0
@@ -1652,7 +1654,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## math-intrinsics@1.1.0
@@ -1661,7 +1663,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## media-typer@0.3.0
@@ -1670,7 +1672,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## merge-descriptors@1.0.3
@@ -1679,7 +1681,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## methods@1.1.2
@@ -1688,7 +1690,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## mime-db@1.52.0
@@ -1697,7 +1699,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## mime-types@2.1.35
@@ -1706,7 +1708,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## mime@1.6.0
@@ -1715,7 +1717,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## minimatch@3.1.2
@@ -1724,7 +1726,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ms@2.0.0
@@ -1733,7 +1735,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ms@2.1.3
@@ -1742,7 +1744,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## nanoid@3.3.11
@@ -1751,7 +1753,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## natural-compare@1.4.0
@@ -1769,7 +1771,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## node-domexception@1.0.0
@@ -1778,7 +1780,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## node-fetch@3.3.2
@@ -1787,7 +1789,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## node-releases@2.0.27
@@ -1796,7 +1798,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## object-assign@4.1.1
@@ -1805,7 +1807,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## object-inspect@1.13.4
@@ -1814,7 +1816,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## on-finished@2.4.1
@@ -1823,7 +1825,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## optionator@0.9.4
@@ -1832,7 +1834,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## p-limit@3.1.0
@@ -1841,7 +1843,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## p-locate@5.0.0
@@ -1850,7 +1852,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## parent-module@1.0.1
@@ -1859,7 +1861,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## parseurl@1.3.3
@@ -1868,7 +1870,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## path-exists@4.0.0
@@ -1877,7 +1879,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## path-key@3.1.1
@@ -1886,7 +1888,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## path-to-regexp@0.1.12
@@ -1895,7 +1897,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## peer@1.0.2
@@ -1904,7 +1906,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## peerjs-js-binarypack@2.1.0
@@ -1913,7 +1915,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## peerjs@1.5.5
@@ -1922,7 +1924,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## picocolors@1.1.1
@@ -1931,7 +1933,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## picomatch@4.0.3
@@ -1940,7 +1942,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## playwright-core@1.57.0
@@ -1950,7 +1952,7 @@ https://github.com/jaredwray/cacheable
 - Files:
   - LICENSE
   - NOTICE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## playwright@1.57.0
@@ -1960,7 +1962,7 @@ https://github.com/jaredwray/cacheable
 - Files:
   - LICENSE
   - NOTICE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## postcss@8.5.6
@@ -1969,7 +1971,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## prelude-ls@1.2.1
@@ -1978,7 +1980,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## proxy-addr@2.0.7
@@ -1987,7 +1989,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## punycode@2.3.1
@@ -1996,7 +1998,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE-MIT.txt
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## qrcode.react@4.2.0
@@ -2005,7 +2007,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## qs@6.14.0
@@ -2014,7 +2016,7 @@ https://github.com/jaredwray/cacheable
 - License: BSD-3-Clause
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## range-parser@1.2.1
@@ -2023,7 +2025,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## raw-body@2.5.3
@@ -2032,7 +2034,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## react-dom@19.2.0
@@ -2041,7 +2043,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## react-refresh@0.18.0
@@ -2050,7 +2052,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## react-router-dom@7.9.6
@@ -2059,7 +2061,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## react-router@7.9.6
@@ -2068,7 +2070,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## react@19.2.0
@@ -2077,7 +2079,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## require-directory@2.1.1
@@ -2086,7 +2088,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## resolve-from@4.0.0
@@ -2095,7 +2097,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## rollup@4.53.3
@@ -2104,7 +2106,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## safe-buffer@5.2.1
@@ -2113,7 +2115,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## safer-buffer@2.1.2
@@ -2122,7 +2124,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## scheduler@0.27.0
@@ -2131,7 +2133,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## sdp@3.2.1
@@ -2140,7 +2142,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## semver@6.3.1
@@ -2149,7 +2151,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## send@0.19.0
@@ -2158,7 +2160,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## send@0.19.1
@@ -2167,7 +2169,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## serve-static@1.16.2
@@ -2176,7 +2178,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## set-cookie-parser@2.7.2
@@ -2185,7 +2187,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## setprototypeof@1.2.0
@@ -2194,7 +2196,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## shebang-command@2.0.0
@@ -2203,7 +2205,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## shebang-regex@3.0.0
@@ -2212,7 +2214,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## side-channel-list@1.0.0
@@ -2221,7 +2223,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## side-channel-map@1.0.1
@@ -2230,7 +2232,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## side-channel-weakmap@1.0.2
@@ -2239,7 +2241,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## side-channel@1.1.0
@@ -2248,7 +2250,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## source-map-js@1.2.1
@@ -2257,7 +2259,7 @@ https://github.com/jaredwray/cacheable
 - License: BSD-3-Clause
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## statuses@2.0.1
@@ -2266,7 +2268,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## statuses@2.0.2
@@ -2275,7 +2277,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## string-width@4.2.3
@@ -2284,7 +2286,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## strip-ansi@6.0.1
@@ -2293,7 +2295,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## strip-json-comments@3.1.1
@@ -2302,7 +2304,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## supports-color@7.2.0
@@ -2311,7 +2313,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## tinyglobby@0.2.15
@@ -2320,7 +2322,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## toidentifier@1.0.1
@@ -2329,7 +2331,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## type-check@0.4.0
@@ -2338,7 +2340,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## type-is@1.6.18
@@ -2347,7 +2349,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## typescript@5.9.3
@@ -2366,7 +2368,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## unpipe@1.0.0
@@ -2375,7 +2377,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## update-browserslist-db@1.1.4
@@ -2384,7 +2386,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## uri-js@4.4.1
@@ -2393,7 +2395,7 @@ https://github.com/jaredwray/cacheable
 - License: BSD-2-Clause
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## utils-merge@1.0.1
@@ -2402,7 +2404,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## vary@1.1.2
@@ -2411,7 +2413,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## vite@7.2.4
@@ -2420,7 +2422,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## web-streams-polyfill@3.3.3
@@ -2429,7 +2431,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## webrtc-adapter@9.0.3
@@ -2438,7 +2440,7 @@ https://github.com/jaredwray/cacheable
 - License: BSD-3-Clause
 - Files:
   - LICENSE.md
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## which@2.0.2
@@ -2447,7 +2449,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## word-wrap@1.2.5
@@ -2456,7 +2458,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## wrap-ansi@7.0.0
@@ -2465,7 +2467,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## ws@8.18.3
@@ -2474,7 +2476,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## y18n@5.0.8
@@ -2483,7 +2485,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## yallist@3.1.1
@@ -2492,7 +2494,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## yargs-parser@21.1.1
@@ -2501,7 +2503,7 @@ https://github.com/jaredwray/cacheable
 - License: ISC
 - Files:
   - LICENSE.txt
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## yargs@17.7.2
@@ -2510,7 +2512,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## yocto-queue@0.1.0
@@ -2519,7 +2521,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - license
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## zod-validation-error@4.0.2
@@ -2528,7 +2530,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ## zod@4.1.13
@@ -2537,7 +2539,7 @@ https://github.com/jaredwray/cacheable
 - License: MIT
 - Files:
   - LICENSE
-- Status: Check manually
+- Status: Present in node_modules
 - Notes:
 
 ---
